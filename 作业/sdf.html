@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN>
+<head>
+    <meta charset="gbk">
+    <meta charset="utf-8">
+    <meta name="robots" content="all">
+    <meta name="Copyright" content="Tencent">
+    <meta name="keywords" content="英雄联盟,lol,lol新手礼包,lol攻略,lol视频,lol视频攻略,英雄资料,英雄联盟战争学院,明星解说视频,101战争学院,英雄,攻略,WCG,点亮图标,赛事"/>
+    <meta name="description" content="英雄联盟官方网站，海量风格各异的英雄，丰富、便捷的物品合成系统，游戏内置的匹配、排行和竞技系统，独创的“召唤师”系统及技能、符文、天赋等系统组合，必将带你进入一个崭新而又丰富多彩的游戏世界。"/>
+    <title>英雄联盟</title>
+   
+    <link href="css/index.css" rel="stylesheet" type="text/css">
+<script>
+(function jump(){var o=navigator.userAgent;if(o.indexOf("iPhone")!=-1||o.indexOf("iPad")!=-1||o.indexOf("iPod")!=-1||o.indexOf("Android")!=-1){self.location='/es/m/index.htm';};})();
+</script>
+</head>
+<body id="index-page">
+<div class="wrap">
+    <!-- top S -->
+    <div class="g-top">
+	<div class="g-top-box">
+		<a href="http://lol.qq.com/" class="weblogo fl" name="pos_0" id="pos_0"></a>
+             <a href="http://lpl.qq.com/" class="lpllogo fl"></a>
+		<div class="search-box pr fl"><input type="text" id="search-input" class="search"><a href="javascript:PUBLIC_FUNCTION.Search();" class="searchbtn">搜索</a><div class="keyword pa"></div></div>
+		<div class="login fl">
+			<p id="unlogin" style="display: block;">召唤师您好，请 <a href="javascript:LoginManager.login();">登录</a></p>
+			<p id="logined" style="display: none;">
+				<span><img src="http://ossweb-img.qq.com/images/lol/v1/personal/ttt.png" width="50" class="fl" /></span>
+				<span id="loginedInfo" class="gold"></span> 您好，&nbsp;
+				<a  class="cl-bind" href="javascript:;" id="areasel">选择大区</a>&nbsp<span id="jUserArea" style="display:none;"></span>
+			   	<input type="text" name="iarea" value="" id="areaid" style="display:none;">
+				<a href="javascript:LoginManager.logout();" id="j_loginout">注销</a>
+			</p>
+		</div>
+	</div>
+</div>
+<script src="/comm-htdocs/js/game_area/lol_server_select.js"></script>
+    <!-- top E -->
+    <!-- top S -->
+    <div class="g-tab pr">
+        <div class="g-nav-bg pa"></div>
+<div class="g-nav pa">
+	<div class="g-nav-box clearfix">
+		<ul class="g-nav-ul fl">
+			<li class="g-nav-li"><a href="http://lpl.qq.com/index.shtml" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn1','virtualDomain':'lol.qq.com'});">首页</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/live.shtml" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn2','virtualDomain':'lol.qq.com'});" class="tv">L-LIVE</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/video.shtml" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn3','virtualDomain':'lol.qq.com'});">视频</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/team.shtml" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn4,'virtualDomain':'lol.qq.com'});">战队</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/data/" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn5','virtualDomain':'lol.qq.com'});">数据</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/guess/" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn12','virtualDomain':'lol.qq.com'});">竞猜</a><i class="new">H</i><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/ticket.shtml" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn11','virtualDomain':'lol.qq.com'});">售票</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lolriotmall.qq.com/zhuanti/2017/608.html" target="_blank"  onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn12','virtualDomain':'lol.qq.com'});">队服</a></li> 
+		</ul>
+		<ul class="g-nav-oth fr">
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/lpl/" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn6','virtualDomain':'lol.qq.com'});">LPL</a><i class="hot">H</i><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/lspl/" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn7','virtualDomain':'lol.qq.com'});">LSPL</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/demacia/" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn11','virtualDomain':'lol.qq.com'});">德玛西亚杯</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/msi/" onclick="pgvSendClick({hottag:'lplweb.nav.btn.msi','virtualDomain':'lol.qq.com'});">季中冠军赛</a><span class="sline"></span></li>
+            <li class="g-nav-li"><a href="http://lpl.qq.com/es/city/" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn9','virtualDomain':'lol.qq.com'});">城市英雄争霸赛</a><span class="sline"></span></li>
+            <li class="g-nav-li"><a  href="http://lpl.qq.com/es/lcl/index.shtml" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn10','virtualDomain':'lol.qq.com'});">高校联赛</a><span class="sline"></span></li>
+			<li class="g-nav-li"><a href="http://lpl.qq.com/es/elcl/index.shtml" onclick="pgvSendClick({hottag:'lplweb.nav.btn.btn8','virtualDomain':'lol.qq.com'});">校际精英赛</a><span class="sline"></span></li>
+			<li class="g-nav-li overbox pr">
+            	<a class="grey" class="overbtn">海外赛事</a>
+              
+             	</ul-->
+			</li>
+		</ul>
+	</div>
+</div>
+        <div class="rotatebox" id="rotate">	
+	   <div class="hd">
+			<ul>
+				<!--li><a href="###">1</a></li-->
+			</ul>
+		</div>
+		<div class="bd" id="head_pic_ad">
+				<div class="tab-panel">
+					
+				</div>
+				<div class="tab-panel">
+					
+				</div>
+				<div class="tab-panel">
+					
+				</div>
+				<div class="tab-panel">
+					
+				</div>
+		</div>
+</div>
+        <div class="ggshow" style="display:none;"><a id="top_gg_pic" href="http://daeryou.jd.com/" target="_blank" onClick="pgvSendClick({hottag:'lplweb.index.gg.15gg','virtualDomain':'lol.qq.com'})" ></a><span class="second"></span></div>
+    </div>
+    <!-- top E -->
+    <!-- matchlist S -->
+    <div class="wb schedule pr index-schedule">
+		<div class="pr schedule-con ovh">
+            <div id="matchBox">
+			<ul class="pr list" id="matchList" style="width: 1764px; left: 0px;"></ul>	
+             </div>			
+		</div>			
+		<a id="matchPrev" href="javascript:;" class="pa schedule-spr match-arr-btn sprev ht gray">上翻</a>
+		<a id="matchNext" href="javascript:;" class="pa schedule-spr match-arr-btn snext ht">下翻</a>
+	</div>
+    <!-- matchlist E -->
+	<div class="prbox pr">
+		<!-- mode1 S -->
+		<div class="mode1 clearfix">
+			<div class="new-news fl">
+				<div class="tit-box clearfix">
+					<h2 class="fl" name="pos_1" id="pos_1">最新资讯</h2><a href="http://lpl.qq.com/es/news.shtml" target="_blank" onClick="pgvSendClick({hottag:'lplweb.index.btn.newsmore','virtualDomain':'lol.qq.com'})" class="more fr">...</a>
+				</div>
+				<!-- 手动更新部分 S-->
+				<div id="static_news">
+				<ul class="top-news1 clearfix">
+					<li class="tit"><a href="javascript:;" class="gold"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li class="sline"></li>
+					<li><a href="javascript:;"></a></li>
+				</ul>
+				<ul class="top-news2 clearfix">
+					<li class="tit"><a href="javascript:;" class="gold"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li class="sline"></li>
+					<li><a href="javascript:;"></a></li>
+					<li><a href="javascript:;"></a></li>
+					<li class="sline"></li>
+					<li><a href="javascript:;"></a></li>
+				</ul>
+				</div>
+				<!-- 手动更新部分 E-->
+				<ul class="mode1-news-list clearfix" id="jj_news">
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+				</ul>
+			</div>
+			<div class="video fl pr">
+				<div class="tit-box clearfix">
+					<h2 class="fl"><label id="live-status1">暂无直播</label><span class="gold" id="game_name"></span></h2>
+					<a href="javascript:;" class="show-list fr">节目单</a>
+				</div>
+				<div class="video-box">
+					<div class="live-video">
+                                        <a href="http://lpl.qq.com/es/live.shtml" class="index_go">进入直播间</a>
+						<div class="" id="liveCon"></div>
+					</div>
+				</div>
+				<div class="clearfix">
+					<div class="video-left fl">
+						<div class="tit-box">
+							<h2>赛事栏目</h2>
+						</div>
+						<div class="video-left-cbox clearfix" id="official_contents">
+							<div class="video-left-child fl"></div>
+							<div class="video-left-child fl"></div>
+							<div class="video-left-child fl"></div>
+							<div class="video-left-child fl"></div>
+						</div>
+					</div>
+					<div class="video-right fl">
+						<div class="tit-box">
+							<h2>精品推荐</h2>
+						</div>
+						<div class="rotatebox-s" id="rotate-s">	
+						   <div class="hd">
+								<ul>
+									<li><a href="###">1</a></li>
+									<li><a href="###">2</a></li>
+									<li><a href="###">3</a></li>
+									<li><a href="###">4</a></li>
+								</ul>
+							</div>
+							<div class="bd" id="good_rec_info">
+								<div class="tab-panel">
+									
+								</div>
+								<div class="tab-panel">
+									
+								</div>
+								<div class="tab-panel">
+									
+								</div>
+								<div class="tab-panel">
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="progr-list none">
+					<div class="x">
+						<ul class="clearfix" id="progr-list">
+							<!-- <li class="fl">
+								<p class="time"><span class="f12">2016.05.20</span><span class="f24">15:00</span></p>
+								<p class="name">全球总决赛</p>
+								<p class="team"><span>OMG</span><span class="gold">vs</span><span>SKT</span></p>
+							</li> -->
+						</ul>
+						<span class="z">◆</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- mode1 E -->
+		<!-- mode2 S -->
+		<div class="mode2 clearfix">
+			<div class="mode2-left fl">
+				<ul class="s-gg clearfix" id="hot_focus">
+					<!--li class="s-gg-s fl"><img src="http://ossweb-img.qq.com/images/lol/lpl/gg1.jpg" width="430" height="110"></li>
+					<li class="fl"><img src="http://ossweb-img.qq.com/images/lol/lpl/gg1.jpg" width="210" height="110"></li>
+					<li class="fl"><img src="http://ossweb-img.qq.com/images/lol/lpl/gg1.jpg" width="210" height="110"></li>
+					<li class="fl"><img src="http://ossweb-img.qq.com/images/lol/lpl/gg1.jpg" width="210" height="110"></li>
+					<li class="fl"><img src="http://ossweb-img.qq.com/images/lol/lpl/gg1.jpg" width="210" height="110"></li-->
+				</ul>
+			</div>
+			<div class="mode2-common fl">
+				<div class="tit-box clearfix">
+					<h2 class="fl">海外联赛</h2>
+					<a href="http://lpl.qq.com/es/news.shtml" target="_blank"  class="fr more" onClick="pgvSendClick({hottag:'lplweb.index.btn.haiwaimore','virtualDomain':'lol.qq.com'})" >...</a>
+				</div>
+				<ul class="overseas-news clearfix" id="abroad_news">	
+					<!--li class="headline fl">
+						<a href="javascript:;" class="fl">2016全球总决赛淘汰赛赛程公布</a><span class="fr">06-15</span>
+						<img src="http://ossweb-img.qq.com/images/lol/lpl/gg.jpg" width="150" height="90" class="fl"><p class="fl">2016《英雄联盟》全球总决赛小组赛现已全部落下帷幕，在9月30日-10月10日为期11天的角逐中。...</p>
+						<a href="javascript:;" class="mode2-detail fl">阅读详情</a>
+					</li-->
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr"></span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr"></span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr"></span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr"></span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr"></span></li>
+				</ul>
+			</div>
+			<div class="mode2-common fl">
+				<div class="tit-box clearfix">
+					<h2 class="fl">城市英雄/高校联赛</h2>
+					<a href="http://lpl.qq.com/es/news.shtml" target="_blank"  class="fr more" onClick="pgvSendClick({hottag:'lplweb.index.btn.citymore','virtualDomain':'lol.qq.com'})" >...</a>
+				</div>
+				<ul class="overseas-news clearfix" id="unprofession_news">	
+					<li class="headline fl">
+						<a href="javascript:;" class="gold fl"></a><span class="fr"></span>
+						<p class="fl"></p>
+						<a href="javascript:;" class="mode2-detail fl">阅读详情</a>
+					</li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+					<li class="fl"><a href="javascript:;" class="fl"></a><span class="fr">06-15</span></li>
+				</ul>
+			</div>
+		</div>
+		<!-- mode2 E -->
+		<!-- mode3 S -->
+		<div class="mode3 clearfix">
+			<div class="mode3-left fl">
+				<div class="tit-box pr">
+					<h2 class="fl" name="pos_2" id="pos_2" style="display:none;">LPL最佳阵容</h2>
+					<a href="http://lpl.qq.com/es/data/" target="_blank"  class="fr more" onClick="pgvSendClick({hottag:'lplweb.index.btn.playermore','virtualDomain':'lol.qq.com'})" >...</a>
+					<ul class="ply_nav clearfix" id="most_value_players_tab">
+						<li class="fl"><a href="javascript:;"  class="on">最强战力</a></li>
+						<li class="fl"><a href="javascript:;" style="display:none;">上周最佳</a></li>
+					</ul>
+				</div>
+				<div class="mode-detail" id="mode-detail">
+					<ul class="mvp-detail clearfix">
+						<li>
+							<div class="mvp-player" >
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_1_Scout.png" alt="Scout">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/a74ab2fc8201d0c167e8a66d88004759/0" alt="EDG"></span>
+								<span class="mvp-rank one">1</span>
+								<p class="mvp-name">Scout<span>战力：<strong>67.784</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_2_Rookie.png" alt="Rookie">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/998cb5f6cc78749b5d2c395a61e02c3f/0" alt="IG"></span>
+								<span class="mvp-rank two">2</span>
+								<p class="mvp-name">Rookie<span>战力：<strong>67.77</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_3_Cat.png" alt="Cat">
+								<span class="mvp-clan-logo"><img src="http://img.crawler.qq.com/lolwebvideo/201501/0120384fcd94f4a5a46ecb5de9c721f1/0" alt="DAN"></span>
+								<span class="mvp-rank three">3</span>
+								<p class="mvp-name">Cat<span>战力：<strong>67.345</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_4_Icon.png" alt="Icon">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/3be15c042ebba67a2cd876c408c24fe9/0" alt="OMG"></span>
+								<span class="mvp-rank">4</span>
+							<p class="mvp-name">Icon<span>战力：<strong>67.288</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_5_Meiko.png" alt="Meiko">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/a74ab2fc8201d0c167e8a66d88004759/0"></span>
+								<span class="mvp-rank">5</span>
+								<p class="mvp-name">Meiko<span>战力：<strong>65.202</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_6_Mouse.png" alt="Mouse">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/a74ab2fc8201d0c167e8a66d88004759/0" alt="EDG"></span>
+								<span class="mvp-rank">6</span>
+								<p class="mvp-name">Mouse<span>战力：<strong>64.878</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_7_Lwx.png" alt="Lwx">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/1fafdaa5932af6a724771fcc6b709a68/0" alt="NB"></span>
+								<span class="mvp-rank">7</span>
+								<p class="mvp-name">Lwx<span>战力：<strong>63.329</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_8_Qiuqiu.png" alt="Qiuqiu">
+								<span class="mvp-clan-logo"><img src="http://img.crawler.qq.com/lolwebvideo/201501/0120384fcd94f4a5a46ecb5de9c721f1/0" alt="DAN"></span>
+								<span class="mvp-rank">8</span>
+								<p class="mvp-name">Qiuqiu<span>战力：<strong>62.838</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_9_Smlz.png" alt="Smlz">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/3be15c042ebba67a2cd876c408c24fe9/0"></span>
+								<span class="mvp-rank">9</span>
+								<p class="mvp-name">Smlz<span>战力：<strong>62.316</strong></span></p>
+							</div>
+						</li>
+						<li>
+							<div class="mvp-player">
+								<img src="http://ossweb-img.qq.com/images/lpl/web201612/power/zqzl_10_Xiaohu.png" alt="Xiaohu">
+								<span class="mvp-clan-logo"><img src="http://shp.qpic.cn/lolwebvideo/201501/7a710b743899fa0f6e03802bda900f4a/0"></span>
+								<span class="mvp-rank">10</span>
+								<p class="mvp-name">Xiaohu<span>战力：<strong>61.885</strong></span></p>
+							</div>
+						</li></ul>
+					<ul class="ply-detail clearfix" id="most_value_players" style="display:none;"></ul>
+				</div>
+			</div>
+			<div class="mode3-common fl">
+				<div class="progress2 pr">
+					<div class="tit-box">
+						<h2 class="fl" name="pos_4" id="pos_4">积分榜</h2>
+						<ul class="cent_nav clearfix" id="team_score_bar"><li class="fl"><a href="javascript:;" class="on" rel=0>LPL</a></li><li class="fl"><a href="javascript:;" rel=1>LCK</a></li><li class="fl"><a href="javascript:;" rel=2>LMS</a></li><li class="fl"><a href="javascript:;" rel=3>EU.LCS</a></li><li class="fl"><a href="javascript:;" rel=4>NA.LCS</a></li></ul>
+					</div>
+					<div class="match-rank clearfix" id="group_bar">
+					<!--  
+						<a href="javascript:;" class="on">A组</a><a href="javascript:;" class="">B组</a>
+					-->
+					</div>
+					<!-- 总排名 -->
+					<div class="match-rank-con" style="display: block;">
+						<ul class="match-title ovh tc">
+							<li class="match-pm">排名</li>
+							<li class="match-tm">战队</li>
+							<li class="match-fv">胜 负</li>
+							<li class="match-cent">积分</li>
+						</ul>
+						<div class="progress_scroll_pad">
+							<div class="progress_scroll sheight">
+								<ul class="match-rank-list tc ovh clearfix" id="team_score_board_A" style="display: none;"></ul>
+								<ul class="match-rank-list tc ovh clearfix" id="team_score_board_B" style="display: none;"></ul>
+								<ul class="match-rank-list tc ovh clearfix" id="team_score_board_C" style="display: none;"></ul>
+								<ul class="match-rank-list tc ovh clearfix" id="team_score_board_D" style="display: none;"></ul>
+								<ul class="match-rank-list tc ovh clearfix" id="team_score_board_E" style="display: none;"></ul>
+								<ul class="match-rank-list tc ovh clearfix" id="team_score_board_F" style="display: none;"></ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- mode3 E -->
+		<!-- mode4 S -->
+		<div class="mode4 clearfix">
+			<div class="tit-box pr">
+				<h2 class="fl" name="pos_3" id="pos_3">赛事视频</h2>
+				<ul class="video-nav clearfix" id="videoSortList"><li class="fl"><a href="javascript:;" class="on">全部</a></li><li class="fl"><a href="javascript:;">职业联赛</a></li><li class="fl"><a href="javascript:;">甲级职业联赛</a></li><li class="fl"><a href="javascript:;">德玛西亚杯</a></li><li class="fl"><a href="javascript:;">城市英雄争霸赛</a></li><li class="fl"><a href="javascript:;">高校联赛</a></li><li class="fl"><a href="javascript:;">全球总决赛</a></li><li class="fl"><a href="javascript:;">季中赛</a></li><li class="fl"><a href="javascript:;">全明星赛</a></li><li class="fl"><a href="javascript:;">精彩集锦</a></li></ul>
+				<a href="http://lpl.qq.com/es/video.shtml" target="_blank" class="fr more" onClick="pgvSendClick({hottag:'lplweb.index.btn.videomore','virtualDomain':'lol.qq.com'})" >...</a>
+			</div>
+			<ul class="video-child-nav clearfix" style="display:none;"><li class="fl"><a href="javascript:;" class="on">职业联赛</a></li><li class="fl"><a href="javascript:;">甲级职业联赛</a></li><li class="fl"><a href="javascript:;">德玛西亚杯</a></li><li class="fl"><a href="javascript:;">城市英雄争霸赛</a></li><li class="fl"><a href="javascript:;">高校联赛</a></li><li class="fl"><a href="javascript:;">全球总决赛</a></li><li class="fl"><a href="javascript:;">季中赛</a></li><li class="fl"><a href="javascript:;">全明星赛</a></li></ul>
+			<ul class="video-con clearfix" id="video_list">
+				
+			</ul>
+		</div>
+		<!-- mode4 E -->
+		<!-- mode5 S -->
+		<div class="mode5 clearfix">
+			<div class="tit-box pr">
+				<h2 class="fl">俱乐部动态</h2>
+				<ul class="dynamic-nav clearfix" id="club_dynamic_bar"><li class="on fl"><a href="javascript:;">EDG</a></li><li class="fl"><a href="javascript:;">RNG</a></li><li class="fl"><a href="javascript:;">IM</a></li><li class="fl"><a href="javascript:;">CLG</a></li><li class="fl"><a href="javascript:;">HAQ</a></li><li class="fl"><a href="javascript:;">WE</a></li><li class="fl"><a href="javascript:;">OMG</a></li></ul>
+				<a href="javascript:;" class="fr confirm">确认选择</a>
+			</div>
+			<ul class="dynamic-con clearfix" id="club_dynamic_list">
+			
+			</ul>
+		</div>
+		<!-- mode5 E -->
+		<!-- mode6 S -->
+		<div class="mode6 clearfix">
+			<div class="tit-box">
+				<h2 class="fl" name="pos_5" id="pos_5">激情瞬间</h2>
+			</div>
+			<div class="clearfix" id="nice_moment">
+				
+			</div>
+		</div>
+		<!-- mode6 E -->
+	</div>
+	<!-- footer S -->
+	<div class="footer-box">
+	<ul class="footer-nav clearfix">
+		<li class="fl"><p class="footer-t">赛事资讯</p><a href="http://lpl.qq.com/es/news.shtml">最新资讯</a><a href="http://lpl.qq.com/es/news.shtml">海外联赛</a><a href="http://lpl.qq.com/es/news.shtml">城市高校赛</a><a href="http://lpl.qq.com/es/news.shtml">俱乐部动态</a></li>
+		<li class="fl"><p class="footer-t">直播点播</p><a href="http://lpl.qq.com/es/live.shtml">L-Live直播</a><a href="http://lpl.qq.com/es/lpltop/">精彩集锦</a><a href="http://lpl.qq.com/es/video.shtml">赛事视频</a></li>
+             <li class="fl"><p class="footer-t">联赛杯赛</p><a href="http://lpl.qq.com/es/lpl/">职业联赛</a><a href="http://lpl.qq.com/es/lspl/">甲级职业联赛</a><a href="http://lpl.qq.com/es/city/">城市英雄争霸赛</a><a href="javascript:;">高校联赛</a><a href="javascript:;">全球总决赛</a><a href="javascript:;">季中冠军赛</a><a href="javascript:;">全明星赛</a><a href="javascript:;">德玛西亚杯</a></li>
+		<li class="fl"><p class="footer-t">俱乐部</p><a href="http://lpl.qq.com/es/team.shtml">LPL赛区</a><a href="http://lpl.qq.com/es/team.shtml">LCK赛区</a></li>
+		<li class="fl"><p class="footer-t">赛事数据</p><a href="http://lpl.qq.com/es/data/">联赛数据</a><!--a href="javascript:;">个人数据</a><a href="javascript:;">英雄数据</a--></li>
+	</ul>
+	<script src="http://ossweb-img.qq.com/images/js/foot.js"></script>
+</div><!--[if !IE]>|xGv00|a9db9b08b74d5f743e729c53e39818e1<![endif]-->
+	<!-- footer E -->
+</div>
+<div class="videopop" id="videopop">
+	<div class="pr">
+		<h4><label id="live-status2">暂无直播</label><span id="game_name2"></span></h4>
+             <a href="javascript:;" class="clspop">&times</a>
+		<div class="vtips">点击按住视频标题可以移动</div>
+		<div class="vpop" id="vpop"></div>
+	</div>
+</div>
+<div class="floatnav">
+	<ul class="floatbtn">
+		<li><a href="javascript:scroller('pos_0', 400);" class="totop">回顶部</a></li>
+		<li><a href="javascript:scroller('pos_1', 400);">资讯</a></li>
+		<li><a href="javascript:scroller('pos_2', 400);">数据</a></li>
+		<li><a href="javascript:scroller('pos_3', 400);">视频</a></li>
+		<li><a href="javascript:scroller('pos_4', 400);">排行榜</a></li>
+		<li><a href="javascript:scroller('pos_5', 400);">组图</a></li>
+	</ul>
+</div>
+<div class="indexpop" id="indexpop">
+  <a href="javascript:closeDialog();" class="popclose">&times</a>
+  <div class="popcon"><a href="http://lpl.qq.com/es/news_detail.shtml?nid=8585" class="poplink" target="_blank"></a></div>
+</div>
+<div class="float" id="float">
+   <div class="float_slide">
+	<img src="http://ossweb-img.qq.com/images/lpl/web201612/lpl_m_ewm.png" alt="二维码">
+	<p><span>随时随地看比赛</span><span>赛事官网</span> <span>LPL.QQ.COM </p>
+    </div>
+</div>
+<script src="http://ossweb-img.qq.com/images/js/jquery/jquery-1.8.0.min.js"></script>
+<script src="http://ossweb-img.qq.com/images/lol/title/lol.js"></script>
+<script src="http://pingjs.qq.com/ping_tcss_ied.js"></script>
+<script type="text/javascript" src="http://ossweb-img.qq.com/images/js/milo/milo-min.js"></script>
+<script src="http://imgcache.qq.com/tencentvideo_v1/tvp/js/tvp.player_v2_jq.js"></script>
+<script src="/web201612/js/index.js"></script>
+<script src="http://lpl.qq.com/web201612/data/LOL_MATCH2_TEAM_LIST.js"></script>
+<script src="http://lpl.qq.com/web201612/data/LOL_MATCH2_TEAM_MEMBER_PHOTO_LIST.js"></script>
+<script src="http://lpl.qq.com/web201612/data/LOL_MATCH2_TEAM_MEMBER_LIST.js"></script>
+<script src="http://lpl.qq.com/web201612/data/LOL_MATCH2_GAME_LIST_BRIEF.js"></script>
+<script src="http://lpl.qq.com/web201612/data/LOL_MATCH2_LIVE_BMATCH_LIST.js"></script>
+<script src="http://lpl.qq.com/web201612/data/LOL_MATCH2_NEWS_CATE_LIST.js"></script>
+<script src="http://lpl.qq.com/web201612/data/LOL_NEWMATCH_FIR_PAGE_VIDEO_TAB.js"></script>
+<script src="http://ossweb-img.qq.com/images/lpl/es/public/js/jq-cookie.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/eas/eas.js"></script>
+<script src="http://lpl.qq.com/web201612/js/LPL_Live.js"></script>
+<script src="/web201612/js/tools.js"></script>
+<script src="/web201612/js/common.js"></script>
+<script src="/web201612/js/public.js"></script>
+<script src="/web201612/js/match.js"></script>
+<script src="//lol.qq.com/m/public/Burning.js"></script>
+<script src="http://ossweb-img.qq.com/images/js/share/share-min.js" charset="gb2312"></script>
+<script>
+MATCH_HOME_PAGE.Init();
+EAS.TimeLine();
+//var expiresDate= new Date();
+//expiresDate.setTime(expiresDate.getTime()+3600*1000);
+//$(window).load(function() {
+//  if($.cookie('loadCookie')){}else{TGDialogS("indexpop");$.cookie('loadCookie','pass',{expires:expiresDate});}
+//});
+var fixE = $("#float");
+$(window).bind('scroll.fixed', function() {
+	if ($(window).scrollTop() >= 530) {
+		fixE.removeClass("float").addClass('fixed');
+	} else {
+		fixE.removeClass("fixed").addClass('float');
+	}
+}).trigger('scroll.fixed');
+	function change(btn,div){
+	    var tabBtn = document.getElementById(btn);
+	    var tabBtnA = tabBtn.getElementsByTagName('a');
+	    var tabDiv = document.getElementById(div);
+	    for(var i=0; i<tabBtnA.length;i++){
+	        tabBtnA[i].index = i;
+	        tabBtnA[i].onclick = function(){
+	            for(var i=0;i<tabBtnA.length;i++) {
+	                tabBtnA[i].className = '';
+	                tabDiv.children[i].style.display = 'none';
+	            }
+	            tabBtnA[this.index].className = 'on';
+	            tabDiv.children[this.index].style.display = 'block';
+	              }
+	          }
+  	}
+
+change('most_value_players_tab','mode-detail');
+milo.addEvent(window,'load',function(){
+	loadScript("http://tajs.qq.com/stats?sId=62298307",function(){
+		loadScript("http://pingjs.qq.com/ping_tcss_ied.js",function(){ if(typeof(pgvMain) == 'function')pgvMain({virtualDomain: "lol.qq.com",virtualURL: "/es.shtml"}) });
+	});
+});
+</script>
+</html><!--[if !IE]>|xGv00|23a4b202c40b7522b6400aff050fcda0<![endif]-->

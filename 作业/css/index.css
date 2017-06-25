@@ -1,0 +1,405 @@
+@charset "gb2312";
+body,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,p,form{margin:0;}
+body,button,input,select,textarea{font:12px/1.5 tahoma,'\5b8b\4f53',sans-serif;}
+h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:100;}
+em,b,i{font-style:normal;font-weight: normal;}
+a{text-decoration:none;}
+a:hover{text-decoration:none;}
+img{border:0;}
+button,input,select,textarea{font-size:100%;outline:none;}
+table{border-collapse:collapse;border-spacing:0;}
+td,th,ul,ol{padding:0;}
+ul,li{list-style: none;}
+.pr {position: relative;}
+.pa {position: absolute;}
+.ovh {overflow: hidden;}
+.none{display:none;}
+.gold{color:#cea04a !important;}
+/*通用底部样式*/
+#footer_ied {text-align: center;height: 156px;}
+#footer_ied .wrap_ied {width: 1240px;margin: 0 auto;padding: 40px 0 0;}
+#footer_ied p {color: #6e6e6e;line-height: 24px;font-size: 10px;}
+#footer_ied a {color: #6e6e6e;font-size: 12px}
+.ggshow{width:1240px;height:0;margin:20px auto 0 auto;overflow: hidden;position: relative;}
+.second{position: absolute;right:10px;top:10px;color:#fff;font-size:16px;font-family: 'dinbold';}
+
+.clearfix:after {visibility: hidden;display: block;font-size: 0;content: " ";clear: both;height: 0;}
+.clearfix{*zoom:1;}
+.fl{float: left;}
+.fr{float: right;}
+/*font-face*/
+@font-face {
+	font-family: 'dinbold';
+	src: url('fonts/dinbold.eot'); /* IE9 Compat Modes */
+	src: url('fonts/dinbold.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinbold.woff') format('woff'),
+         url('fonts/dinbold.ttf')  format('truetype'),
+         url('fonts/dinbold.svg#dinbold') format('svg'); /* Legacy iOS */
+}
+@font-face {
+	font-family: 'dinlight';
+	src: url('fonts/dinlight.eot'); /* IE9 Compat Modes */
+	src: url('fonts/dinlight.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dinlight.woff') format('woff'),
+         url('fonts/dinlight.ttf')  format('truetype'),
+         url('fonts/dinlight.svg#dinlight') format('svg'); /* Legacy iOS */
+}
+
+body { min-width:1280px;}
+.wrap{position: relative;width: 100%;font-family: '\5FAE\8F6F\96C5\9ED1';color: #666;background:#f7f7f7;font-size: 16px;}
+.wrap a{color:#555}
+.live-video{position: relative;}
+.index_go{background:url(http://ossweb-img.qq.com/images/lpl/web201612/roombg.png) no-repeat;width:180px;height:50px;text-indent:-999em;position:absolute;left:300px;top:178px;display:none;}
+.prbox{width:1240px;margin:0 auto;}
+/***** top common ******/
+.g-top{background:#040404;height:80px;}
+.g-top-box{width:1280px;height:80px;margin:0 auto;}
+.weblogo,.lpllogo{ background:url(http://ossweb-img.qq.com/images/lpl/web201612/logo.jpg) no-repeat; }
+.weblogo{width:156px;height:58px;margin:11px 15px 0 22px;}
+.lpllogo{ background-position:-174px 0;width:62px;height:58px;margin:11px 300px 0 0; }
+.search-box{ background:url(http://ossweb-img.qq.com/images/lol/lpl/search_bg.jpg) no-repeat;width:302px;height:40px;margin:20px 0 0 0;}
+.search{background:#040404;border:none;width:225px;height:34px;line-height:34px;margin:2px 0 0 25px;color:#c49f58;font-size:14px;}
+.login{line-height:50px;padding:14px 0 0 20px;}
+.login a{color:#fff;}
+#loginedInfo{padding-left:8px;}
+#logined img{border-radius:50%}
+.keyword{position:absolute;left:25px;top:9px;}
+.keyword a{margin-right:10px;color:#cea04a;text-decoration:underline;}
+.searchbtn{width:50px;height:40px;position:absolute;right:0px;top:0px;text-indent:-999em;}
+.g-nav-ul li span,.g-nav-oth li span,.rotatebox .hd li,.rotatebox .hd .on,.show-list,.video-con .ico,.dynamic-nav li,.dynamic-nav li .on,.rotatebox-s .hd li,.rotatebox-s .hd .on,.top-news1 .sline,.top-news2 .sline,.g-nav-ul .tv,.floatnav .totop{background:url(http://ossweb-img.qq.com/images/lol/lpl/sprite_ico.png) no-repeat;}
+
+/* 导航  */
+.g-nav-bg{width:100%;background:#151619;opacity:.8;height:55px;filter:alpha(opacity=80);top:0;left:0; z-index:9}
+.g-nav{width:100%;height:55px;top:0;left:0; z-index:9}
+.g-nav-box{width:1280px;height:55px;margin:0 auto;}
+.g-nav-ul{padding-left:26px;width:520px;}
+.g-nav-ul .g-nav-li,.g-nav-oth .g-nav-li{float:left;line-height:55px;}
+.g-nav-ul .g-nav-li a{font-weight:bold;}
+.g-nav-ul .g-nav-li a,.g-nav-oth .g-nav-li a{color:#e2e2e2;float:left;line-height:55px;}
+.g-nav-box a.grey,.g-nav-box .grey:hover{color: #656565 !important;}
+.g-nav-ul .g-nav-li span,.g-nav-oth .g-nav-li span{ background-position:-55px -100px;float:left;width:20px;height:20px;margin:20px 2px 0 0;}
+.g-nav-ul li i.hot,.g-nav-ul li i.new{background:#eb3200;width:16px;height:16px;line-height:15px;border-radius:8px;color:#fff;font-size:12px;float:left;margin:20px 0 0 5px;text-align:center;}
+.g-nav-oth{padding-left:26px;width:660px;}
+.g-nav-oth .g-nav-li a,.overlist a{font-size:14px;color:#fff;}
+.g-nav-oth .g-nav-li a:hover,.g-nav-ul .g-nav-li a:hover,.overlist a:hover{color:#cea04a;}
+.g-nav-oth li i.hot,.g-nav-oth li i.new{background:#eb3200;width:16px;height:16px;line-height:15px;border-radius:8px;color:#fff;font-size:12px;float:left;margin:20px 0 0 5px;text-align:center;}
+.g-nav-ul .tv{width:82px;background-position:-50px -130px;}
+.overlist-bg{width:90px;height:0;filter:alpha(opacity=80);opacity:.8;background:#151619;position:absolute;right:-5px;top:55px;overflow:hidden;}
+.overlist{width:90px;height:0;position:absolute;right:-5px;top:55px;overflow:hidden;}
+.g-nav-oth .overlist a{display:block;width:60px;height:28px;line-height:20px;margin:0 auto 10px auto;text-align:center;border-bottom:1px solid #626262;float:none;}
+
+/* 大轮播  */
+.rotatebox{width:100%;height:470px;margin: 0px auto; overflow: hidden;  position: relative }
+.rotatebox .hd {width:56px;bottom:5px; left:50%; position: absolute;z-index:1;margin-left:-28px;}
+.rotatebox .hd li{ background-position:-32px -100px;float: left; margin-right: 6px; width: 17px; height:17px; text-indent: -9000em; cursor:pointer; overflow: hidden }
+.rotatebox .hd .on{background-position:0 -95px;width:27px;height:27px;margin-top:-5px}
+.rotatebox .tab-panel{float: left; width:100%;height: 470px;display: block }
+.rotatebox .tab-panel img{position: absolute;width: 1920px;left: 50%;margin-left: -960px;}
+.slide .bd{width: 9999px; position: absolute;left:0px }
+.rotatebox .lb-btn-box{width:1240px;height:470px;margin:0 auto;left:50%;margin-left:-620px;top:0;}
+.rotatebox .lb-btn{width:140px;height:40px;position:absolute;top:345px;left:0;background: rgba(0,0,0,0.65);color:#cea04a;text-align:center;line-height:40px;border: 3px solid #cea04a;}
+.rotatebox .lb-btn:hover{background: rgba(0,0,0,0.9);}
+
+.wb{width: 1240px;margin: 0 auto}
+.spr, .nav li.i-match a i, .schedule .match-score p, .score .status-score p, .schedule-table .t-score p, .related-match .match-score-box p, .page-match .match-score p{background: url(http://ossweb-img.qq.com/images/lol/match/lspl/spr.png) no-repeat;}
+.schedule-spr{background: url(http://game.gtimg.cn/images/lol/match/public/schedule_spr.png) no-repeat;}
+.schedule-con{width: 1240px;height:285px;margin: 0 auto;z-index: 2}
+.schedule .list{width: 1176px;}
+.schedule .list li{width: 235px;height: 235px;background:#fff;background: rgba(255,255,255,0.8);float: left;margin: 0 7px 0;position: relative;box-shadow: 0 4px 12px #f0f0f0}
+.schedule .match-date{width: 100%;height: 60px;background-position: 0 0;text-align: center;padding-top: 10px}
+.schedule .match-time{color: #a3a3a3;font-size: 24px;height:28px;line-height: 28px;font-family: 'dinlight';display: block;overflow: hidden;}
+.schedule .match-time i{font-family: 'dinlight';display: inline-block;line-height: 28px;}
+.schedule .match-time span{font-family: 'dinbold';display: inline-block;line-height: 28px;}
+.schedule .match-status{color: #c7c7c7;line-height: 20px;}
+.schedule .match-team{width: 222px;height: 95px;padding: 15px 7px 0;}
+.schedule .team{width: 50px;height: 90px;position: relative;text-align: center;}
+.schedule .team-pic{width: 50px;height: 50px;overflow: hidden;}
+.schedule .team-pic img{width: 50px;height: 50px;vertical-align: top;}
+.schedule .team-info{width: 50px;height:15px;line-height: 15px;overflow: hidden;padding-top: 5px}
+.schedule .team-info span{width: 50px;display: inline-block;padding-right: 5px;font-size: 14px;}
+.schedule .team-info img{vertical-align: top;}
+.schedule .match-score{width: 106px;top: 22px;left: 50%;margin-left: -52px;font-family: 'dinbold',microsoft yahei;}
+.schedule .match-score p{width: 40px;height: 50px;position: relative;padding: 0 4px;overflow: hidden;background-position: 4px -146px}
+.schedule .match-score p.bgn{background-position: 4px -95px}
+.schedule .match-score p em{width: 40px;height: 50px;display: block;border-radius: 3px;text-align: center;color: #fff;font-size: 48px;line-height: 47px;display: none}
+.schedule .match-score p .i-line{width: 40px;height: 1px;line-height: 1px;display: block;overflow: hidden;background: #3b3b3b;position: absolute;top: 50%;left: 4px;display: none}
+.schedule .match-score p .ico{width: 48px;height: 50px;position: absolute;top: 0;left: 0;background: none}
+.schedule .match-score p.victory em{color: #0febc1}
+.schedule .match-score .semicolon{width:14px;height: 50px;line-height: 50px;text-align: center;display: block;overflow: hidden;font-size: 42px;color: #3b3b3b;position: absolute;top: 0;left: 50%;margin-left: -7px;}
+.schedule .opened p{background-position: 4px -95px}
+.schedule .opened p em{display: block;}
+.schedule .opened p i.i-line{display: block;}
+.schedule .opened p i.ico{display: none;}
+.schedule .match-name{width: 100%;text-align: center;padding-top: 8px;position: relative;}
+.schedule .match-name h4{color: #c49f58;font-size: 14px;}
+.schedule .match-name p{color: #b3b3b3;font-size: 12px;}
+.schedule .watch-btn{width: 90px;height: 24px;line-height:24px;border: 2px solid #c49f58;color: #c49f58;display: block;text-align: center;border-radius: 28px;display: block;clear: both;margin: 0 auto;position: absolute;top: -30px;left: 50%;margin-left: -45px;font-size: 14px;}
+.schedule .watch-btn:hover{text-decoration: none;background: #c49f58;color: #fff}
+.schedule .list li.ing .match-date{background: url(http://game.gtimg.cn/images/lol/match/public/ing_rp.gif) 0 0 repeat-x;height: 55px;border-top: 5px solid #00a483;}
+.schedule .list li.ing .match-time{color: #00a483}
+.schedule .list li.ing .match-status{color: #00a483;font-weight: bold;}
+.schedule .list li.ing .watch-btn{border: 2px solid #00a483;color: #00a483;font-size: 14px;}
+.schedule .list li.ing .watch-btn:hover{background: #00a483;color: #fff}
+.schedule .list li.ing .match-name h4{color: #00a483;font-size: 14px;}
+.schedule .list li.unstart .match-date{background-position: 0 -70px}
+.schedule .list li.unstart .match-time{color: #c49f58}
+.schedule .list li.unstart .match-status{color: #c49f58;}
+.schedule .match-arr-btn{width: 59px;height: 59px;top: 95px;opacity: 0.35;filter:alpha(opacity=35);text-indent: -999em;}
+.schedule .match-prev{left: 0;background-position: 0px -140px}
+.schedule .match-next{right: 0;background-position: -59px -140px}
+.schedule .gray{opacity: 0.1;filter:alpha(opacity=10);cursor: default;}
+.schedule-total{width: 700px;height:130px;margin: 0 auto;text-align: center;}
+.schedule-total .team{width: 250px;height:100%;overflow: hidden;}
+.schedule-total .team-info{width: 90px;float: left;}
+.schedule-total .team-info .pic{width: 80px;height: 80px;}
+.schedule-total .team-info .pic img{width: 80px;height: 80px;vertical-align: top;}
+.schedule-total .team-info .name{color: #555}
+.schedule-total .team-wins{width: 160px;float: left;color: #c49f58;font-family: 'dinbold';}
+.schedule-total .team-wins span{font-size: 88px;display: inline-block;line-height: 80px;letter-spacing: -5px}
+.schedule-total .team-wins em{font-size: 36px;display: inline-block;vertical-align: top;line-height: 40px;}
+.schedule-total .team-red .team-info{float: right;}
+.schedule-total .team-red .team-vs{float: right;}
+.schedule-total .team-vs{width: 180px;position: absolute;top: 5px;left: 50%;margin-left: -90px;color: #8f8f8f}
+.schedule-total .team-vs h5{font-size:52px; color: #d1d1d1;height: 60px;line-height: 60px;padding-bottom: 10px;font-family: 'dinbold';}
+.schedule-total .team-vs span{padding: 0 5px;color: #c49f58;font-weight: bold;}
+.index-schedule{padding-top: 0}
+.index-schedule .schedule-con{padding-top: 35px}
+.index-schedule .match-name{padding-top: 3px}
+.index-schedule .match-prev,.index-schedule .match-next{top: 125px}
+.index-schedule .list{height: 285px;}
+.index-schedule .list li{margin-bottom: 0}
+.index-schedule .list li .arr-ico{width: 28px;height: 14px;background-position: 0 -71px;display: block;position: absolute;top: -36px;left: 50%;margin-left: -14px;display: none;}
+.index-schedule .list li.curr .arr-ico{display: block;}
+
+.sprev,.snext{top:120px !important;}
+.snext{right: -35px;background-position:-59px -140px !important;}
+.sprev{left: -35px;background-position: 0px -140px !important;}
+.lpl_schedule_date a.schedule_date_left,.lpl_schedule_date a.schedule_date_right{width:22px;height:22px;line-height: 22px;border-radius:0;padding:0;background: url(http://ossweb-img.qq.com/images/lol/match/lpl2016/schedule_spr.png) no-repeat;margin:0 2px;}
+.lpl_schedule_date a.schedule_date_left{background-position:-151px -141px}
+.lpl_schedule_date a.schedule_date_right{background-position:-174px -141px}
+
+.lpl_schedule_nav {margin-bottom:20px;}
+.lpl_schedule_nav li{width:196px;height:42px;line-height:42px;text-align:center;float:left;border-bottom:4px solid #ececec;}
+.lpl_schedule_nav li .on{border-bottom:4px solid #c49f58;color:#c49f58;}
+.lpl_schedule_nav li a{color:#777;font-size:16px;font-weight:bold;width: 196px;height: 42px;line-height: 42px;text-align: center;display:block;}
+.lpl_schedule_nav li a:hover{color:#c49f58;text-decoration: none;border-bottom:4px solid #c49f58;}
+.lpl_schedule_date{margin-bottom:20px;}
+.lpl_schedule_date a{width:45px;float:left;border-radius:32px;height: 32px;line-height: 32px;text-align: center;padding: 0 15px;background: #ececec;margin: 0 5px;color: #8e8e8e;border:2px solid #ececec;font-size: 14px;}
+.lpl_schedule_date a:hover{text-decoration: none;}
+.lpl_schedule_date a.on,.lpl_schedule_date a:hover{font-weight: bold;color: #c49f58;border: 2px solid #c49f58;background: #f8f8f8;}
+.schedule-con{height:245px !important;}
+
+.new-news{width:430px;font-size:26px;color:#404040;}
+.tit-box{height:30px;margin-bottom:20px;border-bottom:3px solid #ededee;line-height:30px;color:#404040;font-size:26px;padding-bottom:5px;font-weight:100;}
+.more{color:#a5a5a5;}
+.top-news1{margin-bottom:20px;}
+.top-news2{border-bottom:1px solid #ededee;padding-bottom:20px;margin-bottom:20px;}
+.top-news1 li,.top-news2 li{width:205px;float:left; text-align:center;line-height:26px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.top-news1 a,.top-news2 a{color:#555555;font-size:16px;}
+.top-news1 a:hover,.top-news2 a:hover,.headline a:hover,.video-con p a:hover,.mode1-news-list a:hover{color:#cea04a;}
+.top-news1 .sline,.top-news2 .sline{ background-position:-82px -98px;float:left;width:20px;height:20px;margin:6px 0 0 0;}
+.top-news1 .tit,.top-news2 .tit{width:100%;text-align:center;line-height:36px;font-weight:bold;margin-bottom:20px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.top-news1 .tit a,.top-news2 .tit a{font-size:22px;}
+.mode1-news-list,.mode1-news-list a{font-size:16px;color:#555;}
+.mode1-news-list a{width:86%;text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+.mode1-news-list li{width:100%;line-height:42px;}
+.video{width:780px;margin-left:30px;}
+.video h2 span{font-size:22px;}
+.show-list{ background-position:0 -15px;font-size:16px;color:#404040;padding-left:24px;}
+.video-box{height:440px;margin-bottom:20px;}
+.video-left,.video-right{width:375px;}
+.video-left-cbox{margin-left:-15px;}
+.video-left .video-left-child{width:180px;height:110px;margin:0 0 15px 15px;}
+.video-right{margin-left:30px;}
+.video-left .tit-box,.video-right .tit-box{font-weight:100}
+/* 小轮播  */
+.rotatebox-s{width:100%;height:235px;margin: 0px auto; overflow: hidden;  position: relative }
+.rotatebox-s .hd {width:102px;bottom:5px; left:255px; position: absolute;z-index:1;}
+.rotatebox-s .hd li { background-position: -32px -100px;;float: left; margin-right: 6px; width: 17px; height:17px; text-indent: -9000em; cursor:pointer; overflow: hidden }
+.rotatebox-s .hd .on { background-position: 0 -95px;;width:26px;height:26px;margin-top:-5px}
+.rotatebox-s .tab-panel{float: left; width:375px; display: block;}
+.slide .bd{width: 9999px; position: absolute;left:0px}
+
+.mode2 .tit-box{margin-bottom:10px;}
+.mode2-left{width:430px;}
+.s-gg{margin-left:-10px;}
+.s-gg .s-gg-s{width:430px;}
+.s-gg li{width:210px;height:110px;margin:0 0 10px 10px;}
+.s-gg img:hover,.video-left-cbox img:hover,.video-con li:hover img{border:3px solid #cea04a;-webkit-box-sizing: border-box;-moz-box-sizing: border-box;box-sizing: border-box;}
+.mode2-common{width:375px;margin-left:30px;color:#555;}
+.tit-box h2{font-weight:100;font-size:22px;}
+.mode2-common a{color:#555;}
+.news-n{display:none}
+.news-b{display:block}
+.mode2-common p{width:215px;height:66px;font-size:12px;margin-left:10px;line-height:22px;text-overflow:ellipsis; overflow:hidden;color:#959494}
+.mode2-common .mode2-detail{width:60px;height:20px; text-align:center;line-height:20px;border:2px solid #cea04a;font-size:12px;color:#cea04a;margin-left:10px;}
+.time{font-size:12px;color:#a6a6a6}
+.overseas-news li{width:100%;line-height:36px;}
+.headline a{width:86%;text-overflow:ellipsis; overflow:hidden; white-space:nowrap;}
+
+.mode3-left{width:835px;}
+.mode3-left h2{width:180px;}
+.mode3-common .tit-box{margin-bottom:0;}
+.ply_nav li{width:100px;font-size:16px;}
+.cent_nav li{width:60px;font-size:14px;}
+.mode3-left .ply_nav{ position:absolute;left:0;top:5px;}
+.ply_nav li a,.cent_nav li a{color:#666; text-align:center;display:block}
+.ply_nav li a:hover,.cent_nav li a:hover{border-bottom: 3px solid #cea04a;color: #cea04a;}
+.ply_nav li a.on,.cent_nav li a.on{border-bottom:3px solid #cea04a;color:#cea04a;font-weight:bold;}
+.cent_nav{ position:absolute;top:5px;left:75px;}
+.ply-detail{margin-left:-15px;}
+.ply-detail li{background:#fff;width:155px;color:#666;margin-left:15px;position: relative;padding-bottom:15px;-moz-box-shadow:2px 2px 5px #e9e9e9; -webkit-box-shadow:2px 2px 5px #e9e9e9; box-shadow:2px 2px 5px #e9e9e9;}
+.ply-detail li p{width:77px;line-height:24px;text-align:center;margin-top:5px;font-family: 'dinbold';font-size:20px;}
+.ply-detail li .gameplace{position:absolute;right:10px;top:10px;border-radius:10px;border:1px solid #d5d5d5;padding:0 8px;font-size:12px;background:#fff;}
+.ply-detail li .teamlogo{position:absolute;width:30px;height:30px;left:10px;top: 10px;}
+.ply-detail li .playername{position:absolute;width:155px;height:40px;left:0;top: 175px;color:#fff;text-align:center;line-height:40px;font-family: 'dinbold','微软雅黑';font-size:22px;background: rgba(0,0,0,0.8);}
+.ply-detail .teamlogo img{width:30px;}
+.ply-detail li .chstxt{font-size:12px; font-family:"微软雅黑";}
+.ply-data li{width:77px;margin-left:0;font-size:12px;padding-bottom:0;-moz-box-shadow:none; -webkit-box-shadow:none; box-shadow:none;}
+.ply-detail a{background:#ebebeb;width:64px;height:24px;line-height:24px; text-align:center;font-size:12px;color:#666;margin:10px 0 0 10px;}
+.mode3-common{width:375px;margin-left:30px;}
+.progress2{width:375px;float:left;}
+.match-rank a{width:50%;height:45px;line-height:45px;float:left; text-align:center;color: #666;}
+.match-rank a.on {height: 41px;line-height: 41px;border-bottom: 4px solid #cea04a;color:#cea04a;}
+.match-rank-list li{width:375px;float:left;border-bottom:1px solid #e2e4e5;}
+.match-rank-list .ntb{border-top:none;}
+.match-rank-list img{margin-right:5px;}
+.match-pm{width:50px;}
+.match-tm{width:130px;}
+.match-fv{width:120px;}
+.match-cent{width:75px;}
+.match-rank-list em,.match-rank-team,.match-rank-rult,.match-rank-list i{float:left;height:50px;}
+.match-rank-list em{width:40px;height:40px;line-height:40px; text-align:center;border-radius:20px; background:#eee;color:#898989;margin:5px 0 0 0;font-family:'dinbold';font-size:16px;}
+.match-rank-list .ntb em{color:#cea04a}
+.match-rank-team img,.match-rank-team span{float:left;color:#a6a6a6; font-family:'dinbold';font-size:16px;line-height:50px;}
+.match-rank-team{width:115px;margin-left:15px;}
+.match-rank-team img{margin:7px 10px 0 0;width:40px;height:40px;}
+.match-rank-c{margin:32px 0 0 10px;}
+.match-rank-rult{width:125px;color:#a6a6a6; font-family:'dinbold';font-size:20px;line-height:50px;text-align: center;}
+.match-rank-rult .vic{color:#c49f58;}
+.match-rank-list i{width:65px;color:#a6a6a6; font-family:'dinbold';font-size:20px;line-height:50px;text-align: center;}
+.progress_scroll{height:392px;overflow-y:scroll}
+.sheight{height:310px;}
+.progress_scroll::-webkit-scrollbar {width: 8px;}  
+.progress_scroll::-webkit-scrollbar-track {background:#ededee;border-radius: 10px;}  
+.progress_scroll::-webkit-scrollbar-thumb {border-radius: 10px;background:#d1ab57;}
+.progress_scroll_pad{padding:0 5px;}
+.page-match{padding-top: 10px;}
+.match-title{height: 40px;line-height:40px;background: #ececec;color: #868686;text-align: center;font-weight: bold;}
+.match-title li {height: 40px;line-height: 40px;overflow: hidden;float: left;}
+
+.mode1,.mode2,.mode3,.mode4,.mode5,.mode6{width:1240px;margin:50px auto;}
+.mode4 .video-child-nav{height:30px;padding-bottom:20px;}
+.mode4 .video-child-nav li{height:30px;margin-right:10px;}
+.mode4 .video-child-nav a{height:30px;display:block;border-radius:20px; text-align:center;line-height:30px;padding:0 10px;font-size:14px;}
+.mode4 .video-child-nav a.on,.mode4 .video-child-nav a:hover{background:#cea04a;color:#fff;}
+.mode4 .video-nav{ position:absolute;top:5px;left:100px;}
+.video-nav li{font-size:16px;margin-left:23px;}
+.video-nav li a{color:#666; text-align:center;display:block;font-size:16px;}
+.video-nav li a.on,.video-nav li a:hover{border-bottom:3px solid #cea04a;color:#cea04a;font-weight:bold;}
+.video-con{margin-left:-20px;}
+.video-con li{width:190px;margin:0 0 20px 20px;color:#666;font-size:14px;position: relative;}
+.video-con li:hover a{color:#cea04a;}
+.video-con li:hover .vidcover{display:block}
+.video-con .vidcover{position:absolute;top:0;left:0;width:190px;height:110px;display:none;background: rgba(0,0,0,0.6);}
+.video-con .vidcover a{display:block;background:url(http://game.gtimg.cn/images/lol/match/public/video_cover_ico.png) 65px 20px no-repeat;width:190px;height:110px;}
+.video-con li p{width:100%;height:40px;line-height:20px;margin-bottom:7px;overflow:hidden;}
+.video-con li a,.dynamic-nav li a{color:#666;}
+.video-con li span{font-size:12px;color:#969696;}
+.video-con .pv-long{position:absolute;top:86px;right:5px;color:#fff;}
+.video-con .ico{ background-position:0 4px;padding-left:16px;}
+
+.dynamic-nav{ position:absolute;top:5px;left:145px;}
+.dynamic-nav li{background-position:0 -41px;font-size:16px;margin-right:28px;padding-left:24px;cursor: pointer;}
+.dynamic-nav li.on{ background-position:0 -65px;}
+.dynamic-nav li.on a,.dynamic-nav li a:hover{color:#cea04a;}
+.mode5 .confirm{width:60px;height:20px; text-align:center;line-height:20px;border:2px solid #cea04a;font-size:12px;color:#cea04a;margin-top:5px;}
+.mode5 .confirm:hover{background:#cea04a;color:#fff;}
+.dynamic-con{margin-left:-30px;}
+.dynamic-shownews{height:130px;line-height:20px;overflow:hidden;}
+.dynamic-con .newstit{width:375px;margin-bottom:17px;}
+.dynamic-con .newstit .imgurl{display:none;}
+.dynamic-con .newstit a{width:300px;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.dynamic-con .imgtit{height:30px;position:absolute;bottom:0;left:0;width:210px;background:rgba(0,0,0,0.8); text-align:center;line-height:30px;font-size:14px;color:#fff;text-overflow: ellipsis;overflow: hidden;white-space: nowrap;}
+.team-name{font-size:22px;line-height:40px;margin-right:10px;}
+.dynamic-teamname{float:left;}
+.dynamic-teamlogo img{width:45px;height:45px;float:left;margin-right:10px;}
+.dynamic-con li{width:605px;margin:0 0 20px 30px;line-height:34px;}
+.dynamic-con li .imgurl{margin-right:20px;}
+.passion1,.passion4{width:400px;}
+.passion2,.passion3{width:190px;}
+.passion2,.passion3,.passion4{margin-left:20px;}
+.passion2 .imgbox,.passion4 .imgbox{margin-bottom:20px;}
+.passion5 .imgbox{margin-left:20px;}
+.imgbox{position:relative;}
+.imgbox-txt{width: 100%;height: 0;position: absolute;top: 0;left: 0;overflow: hidden;text-align: center;background: rgba(0,0,0,.8);}
+.imgbtn{position:absolute;width:100%;height:100%; z-index:9;top:0;left:0;}
+.del-t,.del-p{color:#cea04a;}
+.del-p{width:60px;height:20px; text-align:center;line-height:20px;border:2px solid #cea04a;font-size:12px;color:#cea04a;margin:5px auto;}
+
+.footer-box{ background:url(http://ossweb-img.qq.com/images/lol/lpl/foot_bg.jpg) center top no-repeat;height:603px;}
+.footer-nav{width:940px;height:444px;margin:0 auto;padding-left:180px;}
+.footer-t{font-size:22px;color:#fff;padding-bottom:30px;margin-top:30px;}
+.footer-nav li{width:150px;text-align:center;}
+.footer-nav li a{display:block; text-align:center;margin-top:15px;color: #a0a0a0;}
+
+.progr-list{width:395px;padding-bottom:10px;position:absolute;left:387px;top:52px;}
+.progr-list ul li{width:100%;border-bottom:1px solid #eff0f0;}
+.progr-list p{float:left;text-align:center;}
+.progr-list .name,.progr-list .team{line-height:56px;}
+.progr-list .time{width:90px;height:56px;overflow:hidden;}
+.progr-list .name{width:130px;height:56px;color:#555;overflow:hidden;font-size:14px;}
+.progr-list .team{width:138px;height:56px;font-weight:bold;overflow:hidden;}
+.progr-list .team .gold{margin:0 10px;}
+.progr-list .time span{display:block;font-family: 'dinbold';font-weight:bold;}
+.progr-list .time .f12{font-size:12px;line-height:20px;color:#a4a4a4;}
+.progr-list .time .f24{font-size:24px;line-height:26px;}
+.x{width: 375px;background: #fff;padding: 10px;height: 280px;overflow-y: scroll;}
+.z{position:absolute;left:320px;color: #fff;font-size: 50px;top:-40px;z-index:3;}
+
+.videopop{width:420px;height:236px;display:none;position:fixed;right:10px;bottom:100px;}
+.videopop h4{background:rgba(0,0,0,0.8);height:35px;line-height:35px;padding-left:10px;color:#fff}
+.clspop{position:absolute;width:35px;height:35px;display:block;right:0;top:0;font-size:24px;line-height:40px;text-align:center;color:#fff;}
+.videopop .vtips{ background:rgba(0,0,0,0.8);width:100%;height:100%;color:#d2a758; text-align:center;line-height:236px; position:absolute;left:0;top:0;}
+.fmove{bottom:337px;}
+.fstop{top:625px;}
+.floatnav{width:50px;position:fixed;right:10px;z-index:9;}
+.floatnav a{background:#eaeaea;display:block;height:50px; text-align:center;line-height:50px;color:#555;margin-bottom:2px;}
+.floatnav a.on,.floatnav a:hover{width:46px;height:46px;line-height:46px;border:2px solid #cea04a;}
+.floatnav .totop{ background-position:0 -170px;text-indent:-999em;}
+.floatnav .totop:hover{ background-position:-2px -172px;text-indent:-999em;}
+
+.redbag{width:80px;position:absolute;top:100px;left:100px;display:none;}
+.floatips{width:150px;height:230px;position:fixed;left:0;}
+
+
+.indexpop{width:830px;height:334px;display:none;position:relative}
+.popclose{width:40px;height:40px;line-height:22px;color:#fff;font-size:52px;margin-left:520px;display:block;text-align:center;position:absolute;right:0;top:0}
+.popcon{width:780px;height:330px; background:url(http://ossweb-img.qq.com/images/lpl/web201612/lpl_pop_we.jpg) no-repeat;border:2px solid #cea04a;}
+.poplink{width:780px;height:330px;display:block;}
+
+/* 0429 */
+.float_slide{width: 126px;font-family:'\5FAE\8F6F\96C5\9ED1';}
+.float_slide p{padding:5px 0;text-align: center;display: block;background: #ff4001;}
+.float_slide img{width:120px;height:120px;display: block;border: 3px solid #343434}
+.float_slide span{color:#ffffff;font-size: 14px;line-height: 20px;display: block;font-weight:blod}
+.float_slide a{color: #00c7ae;}
+.float,.fixed {right:70px;}
+.float {position:absolute;top: 625px !important;}
+.fixed {position:fixed;bottom: 453px;_position:absolute;_top:expression(eval(document.documentElement.scrollTop)+50);_bottom:auto;/*ie6 fixed*/}
+* html {background-image:url(about:blank);background-attachment:fixed;}
+
+/* 0503 mvp*/ 
+.mvp-detail{clear: both;width: 850px;height: 380px;margin-left: -15px;}
+.mvp-detail li{float:left;display:inline;position:relative;width:155px;height:176px;margin:0 0 14px 15px;background-color:#fff;box-shadow:2px 2px 5px #e9e9e9;}
+.mvp-detail .mvp-clan-logo{position:absolute;width:30px;height:30px;left:5px;top:5px;}
+.mvp-detail .mvp-clan-logo img{width:100%;}
+.mvp-detail .mvp-rank{position:absolute;width:26px;height:26px;right:5px;top:5px;border-radius:50%;background-color:#a5a5a5;line-height:26px;text-align:center;color:#fff;box-shadow:0 0 0px 2px #a5a5a5,inset 0 0 1px 1px #fff}
+.mvp-detail .mvp-name{position:absolute;width:145px;height:30px;line-height:30px;left:0;bottom:0;padding:0 5px;color:rgb(255,255,255);text-align:left;font-family:'dinbold','微软雅黑';background:rgba(0,0,0,0.8);white-space: nowrap;}
+.mvp-detail .mvp-name span{font-size:14px;font-style: normal;position: absolute;right: 5px}
+.mvp-detail .mvp-name strong{font-size:14px;color:#ffc65c;}
+.mvp-player img{width:100%;}
+.mvp-detail .mvp-rank.one{background-color:#db9d29;box-shadow:0 0 0px 2px #db9d29,inset 0 0 1px 1px #fff}
+.mvp-detail .mvp-rank.two{background-color:#dc6a24;box-shadow:0 0 0px 2px #dc6a24,inset 0 0 1px 1px #fff}
+.mvp-detail .mvp-rank.three{background-color:#a8a044;box-shadow:0 0 0px 2px #a8a044,inset 0 0 1px 1px #fff}
+/*  |xGv00|9e60b703493f61e5973fa8c358c9ad0c */

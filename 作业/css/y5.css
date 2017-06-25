@@ -1,0 +1,921 @@
+@charset "utf-8";
+/* CSS Document */
+*,body{ margin:0px;padding:0;}
+body { font: 14px/1.5 "Microsoft Yahei", "Hiragino Sans GB", Helvetica, "Helvetica Neue", Tahoma, Arial, sans-serif; -webkit-text-size-adjust:none; color:#171717; /*background:#fff url(http://static.tuwan.com/templet/lol/index3/images/body-bg7.jpg) center top no-repeat;*/-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+h1, h2, h3, h4, h5, h6 {font-size: 100%;font-weight: bold;}
+img { border:none; vertical-align:middle;}
+table {border-collapse: collapse;}
+li { list-style:none;}
+a {color: #171717; text-decoration:none;}
+a:hover { text-decoration:none; color:#f43838;transition: color 0.2s;-webkit-transition: color 0.2s;-moz-transition: color 0.2s;-ms-transition: color 0.2s; -o-transition: color 0.2s;}
+.fl { float:left;} .fr { float:right;}
+.cf::after {content: '';display: block;clear: both;height: 0;overflow: hidden;visibility: hidden;}
+.cf{zoom:1;}
+input:focus,textarea:focus {outline:none;}
+input:-webkit-autofill,textarea:-webkit-autofill {background-color: rgb(255, 255, 255);background-image: none;color: rgb(0, 0, 0);}
+.Ico-bg { background-image: url(http://static.tuwan.com/templet/lol/index3/images/ico-bg.png); background-repeat: no-repeat;}
+.Hover-scale img{transition: all 0.8s;-webkit-transition: all 0.8s;-moz-transition: all 0.8s;-ms-transition: all 0.8s; -o-transition: all 0.8s;}
+.Hover-scale:hover img { transform:scale(1.2); -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2);}
+.text-suoyin {white-space: nowrap;overflow: hidden;text-overflow: ellipsis;}
+
+.Header-box { width: 1200px; height: 278px; padding-top:277px; margin: 0 auto; position: relative;}
+.Logo-box { position: absolute; width: 1200px; height: 277px; top: 0; left: 0;}
+.Logo-box .H-logo { width: 175px; height: 73px; display: block; position: absolute; top: 20px; left: 0;}
+.Logo-box .H-logo img {
+   width:100%;
+}
+.Logo-box .H-btn {
+    display: block;
+    width: 430px;
+    height: 250px;
+    position: absolute;
+    top: 26px;
+    right: 600px;
+}
+.Logo-box .H-more { display: block; width: 120px; height: 30px; line-height: 30px; font-size: 16px; color: #7a2826; position: absolute; border-radius: 30px; text-align: center; top: 259px; left: 50%; margin-left: -60px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#f8eb99,endColorStr=#e2b56b);
+    background: -ms-linear-gradient(top, #f8eb99, #e2b56b);
+    background: -moz-linear-gradient(top,#f8eb99, #e2b56b);
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%,from(#e2b56b), to(#f8eb99));
+    background: -o-linear-gradient(top, #f8eb99, #e2b56b);
+    background: #f8eb99\9;
+}
+.Logo-box .H-more:hover { 
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#e2b56b,endColorStr=#f8eb99);
+    background: -ms-linear-gradient(top, #e2b56b, #f8eb99);
+    background: -moz-linear-gradient(top,#e2b56b, #f8eb99);
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%,from(#f8eb99), to(#e2b56b));
+    background: -o-linear-gradient(top, #e2b56b, #f8eb99);
+    background: #e2b56b\9;
+}
+.H-form { border: 2px solid #cecac9; width: 337px; height: 27px; overflow: hidden; position: absolute; right: 0; bottom: 12px; border-radius: 2px; background: #fff;}
+.H-form .Search-text { width: 285px; height: 27px; line-height: 27px; padding: 0 0 0 15px; float: left; border: none;}
+.H-form .Search-btn { width: 32px; height: 27px; border: none; float: right; cursor: pointer; background-position: -45px -2px; background-color: #fff;}
+.H-form .Search-btn:hover { background-color: #cecac9;}
+
+.Nav-box {
+    height: 96px;
+    overflow: hidden; 
+    margin-left: -1px;
+    FILTER: progid:DXImageTransform.Microsoft.Gradient(gradientType=0,startColorStr=#484d5c,endColorStr=#323338);
+    background: -ms-linear-gradient(top, #484d5c, #323338);
+    background: -moz-linear-gradient(top,#484d5c, #323338);
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%,from(#323338), to(#484d5c));
+    background: -o-linear-gradient(top, #484d5c, #323338);
+    background: #484d5c\9;
+  }
+.Nav-box a { display: inline-block; width: 170px; height: 70px; padding: 25px 1px 0 0; float: left; text-align: center; color: #fffeff; font-size: 19px;border-top: 1px solid #5e6477; text-shadow:0 1px 1px rgba(0,0,0,0.5); background: url(http://static.tuwan.com/templet/lol/index3/images/nav-border.png) 0 0 no-repeat; position: relative;}
+.Nav-box a span { display: block; font-size: 9px; color: #838999; text-shadow:none;}
+.Nav-box a:hover,.Nav-box a.choose { 
+    background: -ms-linear-gradient(top, #22b857, #078a50);
+    background: -moz-linear-gradient(top,#22b857, #078a50);
+    background: -webkit-gradient(linear, 0% 100%, 0% 0%,from(#078a50), to(#22b857));
+    background: -o-linear-gradient(top, #22b857, #078a50);
+    background: #22b857\9;
+    border-top: 1px solid #2cce71;
+}
+.Nav-box a:hover span,.Nav-box a.choose span { color: #37cd6f;}
+.Nav-box a.choose { width: 174px;}
+.Nav-box a i { display: block; width: 39px; height: 39px; background-position: -97px -1px; position: absolute; top: -1px; right: -1px;}
+
+.Tuwan-chupin { height: 150px; margin-top: 15px; overflow: hidden;}
+.Tuwan-chupin .Tuwan-chupin-left { width: 822px; height: 150px; padding-left: 180px; background-color: rgba(50,52,58,0.9); background-color: #32343a\9; float: left; background-image: url(http://static.tuwan.com/templet/lol/index3/images/tuwanchupin.png); background-position: 40px center; background-repeat: no-repeat;}
+.Tuwan-chupin .Tuwan-chupin-left ul { color: #fff;}
+.Tuwan-chupin .Tuwan-chupin-left ul li { float: left; margin:25px 30px 0 30px;}
+.Tuwan-chupin .Tuwan-chupin-left ul li.video { width: 260px;}
+.Tuwan-chupin .Tuwan-chupin-left ul li.lanren { width: 183px;}
+.Tuwan-chupin .Tuwan-chupin-left ul li.jingpin { width: 183px;}
+.Tuwan-chupin .Tuwan-chupin-left ul li h4 { border-bottom: 1px solid #4a4d55; height: 32px; line-height: 32px;}
+.Tuwan-chupin .Tuwan-chupin-left ul li h4 img {vertical-align: -5px;padding-right: 10px;}
+.Tuwan-chupin .Tuwan-chupin-left ul li .info { margin-left: -25px;}
+.Tuwan-chupin .Tuwan-chupin-left ul li .info a { color: #a9b2c5; display: inline-block; height: 17px; line-height: 17px; padding:8px 0 0 25px; position: relative;}
+.Tuwan-chupin .Tuwan-chupin-left ul li .info a:hover { color: #22b857;}
+.Tuwan-chupin .Tuwan-chupin-left ul li .info a i { display: block; width: 27px; height: 15px; background-position: -147px -4px; position: absolute; top: 0; right: -27px;}
+
+.Tuwan-chupin .Tuwan-chupin-right { width: 177px; float: right; margin-top: -8px;}
+.Tuwan-chupin .Tuwan-chupin-right a { display: block; width: 157px; height: 45px; line-height: 45px; text-align: right; font-size: 15px; font-weight: bold; color: #fff; padding: 0 20px 0 0; margin-top: 8px; background-image: url(http://static.tuwan.com/templet/lol/index3/images/tuwan-rukou.png); background-repeat: no-repeat;}
+.Tuwan-chupin .Tuwan-chupin-right a.lol-tougao { background-position: 0 0;}
+.Tuwan-chupin .Tuwan-chupin-right a.lol-chaoshen-app { background-position: 0 -53px;}
+.Tuwan-chupin .Tuwan-chupin-right a.tuwan-weixingongzhong { background-position: 0 -105px;}
+.Tuwan-chupin .Tuwan-chupin-right a:hover {filter:alpha(opacity=70);-webkit-opacity:0.7;-moz-opacity:0.7;-ms-opacity:0.7;-o-opacity:0.7;opacity: 0.7;}
+
+.Lol-theme { height: 114px; margin:18px 0px 10px -7px;}
+.Lol-theme a { display: inline-block; width: 233px; margin-left: 8px; height: 114px; float: left; background: #fff; position: relative;}
+.Lol-theme a i { display: block; width: 35px; height: 15px; position: absolute; background-position: 0 0; top: 73px; left: 28px;}
+.Lol-theme a:hover img{filter:alpha(opacity=70);-webkit-opacity:0.7;-moz-opacity:0.7;-ms-opacity:0.7;-o-opacity:0.7;opacity: 0.7;}
+.Lol-theme a:hover i { background-position: 0 -15px;}
+
+.Title,.Weizhi { border-bottom: 2px solid #191919; position: relative;}
+.Title span { display: inline-block; padding: 8px 3px; font-weight: normal; border-bottom: 2px solid #70bb02; color: #1b1b1b; font-size: 22px; margin-bottom: -2px; cursor: pointer;}
+.Title a.More { display: inline-block; position: absolute; width: 50px; height: 13px; right: 0; top: 21px; background-position: 0 -60px;}
+.Title a.More:hover { background-position: -86px -60px;}
+.Title-s { border-bottom: 1px solid #191919; position: relative;}
+.Title-s span,.Title-s strong { display: inline-block; padding: 15px 3px; font-weight: normal; color: #1b1b1b; font-size: 22px; cursor: pointer;}
+.Title-s strong { font-size: 18px; padding: 0 3px 8px;}
+.Title-s a.More { display: inline-block; position: absolute; width: 50px; height: 13px; right: 2px; top: 25px; background-position: 0 -60px;}
+.Title-s a.More:hover { background-position: -86px -60px;}
+.Title-s a.Other { display: inline-block; background: #f43838; width: 120px; height: 24px; line-height: 24px; text-align: center; position: absolute; top: 14px; right: 2px; border-radius: 3px; color: #fff; font-weight: normal;}
+.Title-s .Ban { position: absolute; height: 18px; line-height: 18px; top: 23px; left: 97px; font-weight: normal;}
+.Title-s .Ban a { color: #9c9c9c; border-left: 1px solid #9c9c9c; padding: 0 10px; font-size: 12px;}
+.Title-s .Ban a:hover { color: #f43838;}
+.Title-s .Ping { position: absolute; height: 20px; line-height: 20px; top: 18px; right: 0;}
+.Title-s .Ping a { display: inline-block; width: 41px; height: 20px; text-align: center; color: #fff; font-weight: normal; background: #61ad02; margin-left: 3px;}
+.Title-s .Ping a:hover { background: #1d1d1d;}
+.Title-s .Ban-Key { line-height: 35px; color: #a3a3a3; font-weight: normal;}.Title-s .Ban-Key a { color: #a3a3a3; padding-right: 8px;}.Title-s .Ban-Key a:hover { color: #f43838;}
+.Share-con {width:200px; height:26px; position:absolute;right:0;top:0; *top:-8px;}.Share-con span { padding: 0; display: inline-block; line-height: 26px;}
+
+.Weizhi { height: 34px; line-height: 34px; padding-left: 105px; margin-left:10px;}
+.Weizhi span{ position: absolute; bottom: -2px; left: 0; display: block;  border-bottom: 2px solid #70bb02; color: #1b1b1b; }
+
+.Content-box { width: 1160px; margin: 0 auto; padding:25px 20px;background-color:#fff;}
+.Spotlight-box { background: #fff; overflow: hidden;}
+.Spotlight-box .Spotlight-left { width: 436px; float: left;}
+.Spo-hot-news { text-align: center;}
+.Spo-hot-news h3 { padding-top: 10px;}
+.Spo-hot-news h3 a { font-size: 20px; color: #0abb55; line-height: 34px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;}
+.Spo-hot-news p { padding: 5px 0;}
+.Spo-hot-news p a { color: #1b1b1b; padding: 0 5px;}.Spo-hot-news p a:hover{ color: #f43838;}
+.Spo-list-news { margin-top: 35px;}
+.Spo-list-nav { overflow: hidden;}
+.Spo-list-nav li { width: 109px; height: 35px; overflow: hidden; line-height: 35px; float: left; background: #191919; border-bottom: 10px solid #fff; text-align: center; color: #fff; cursor: pointer;}
+.Spo-list-nav li.choose { height: 45px; border-bottom: none; background: url(http://static.tuwan.com/templet/lol/new2015/images/banner-text-nav-bg.png) center 0 no-repeat;}
+.Spo-list-con { overflow: hidden; margin-top: 5px;}
+.Spo-list-con ul { display: none;}
+.Spo-list-con ul li { margin-top: 15px; float: left; display: inline-block;}
+.Spo-list-con ul li a { display: block; width: 321px; height: 21px; line-height: 21px; font-size: 14px; position: relative; padding:0 55px 0 60px;}
+.Spo-list-con ul li a .type { position: absolute; display: block; width: 45px; height: 19px; text-align: center; top: 0px; left: 0px; line-height:18px;}
+.type.zixun { border: 1px solid #34363c; color: #34363c;}.type.video { border:1px solid #d22814; color: #d22814;}.type.img { border: 1px solid #3eba01; color: #3eba01;}.type.gonglv { border: 1px solid #5a2bb9; color: #5a2bb9;}
+.Spo-list-con ul li a .time { position: absolute; right: 0px; top: 0px; display: block; width: 50px; height: 21px; color: #9d9d9d; text-align: center; font-size: 13px;}
+.Spo-list-con ul li a:hover .time { color: #f43838;}
+.Spo-list-con ul li.Li-title {width: 100%;margin: 0;}
+.Spo-list-con ul li.Li-title a{ width: 100%;height: 35px; line-height: 35px; background: #f1f1f1; font-size: 14px; text-align: center; cursor: pointer; margin: 30px 0 15px 0; padding: 0;}
+.Spo-list-con ul li.Li-title a:hover { background: #f43838; color: #fff;}
+.Spo-list-con ul li.Li-more { margin-top: 47px;}
+.Spo-list-con ul li.Li-more a { width: 436px; height: 50px; line-height: 52px; background: #f7f7f7; text-align: center; border-top: 1px solid #f0f0f0; padding: 0;}
+.Spo-list-con ul li.Li-more a:hover { background: #f43838; color: #fff;}
+.Spotlight-box .Spotlight-right { width: 684px; float: left; margin-left: 40px; display: inline-block;}
+
+.Banner-box { width: 684px; height: 319px; position: relative; overflow: hidden;}
+.Banner-box .Wangqi { width: 87px; height: 25px; line-height: 23px; text-align: center; color: #fff; background: #f43838; border-radius: 25px; position: absolute; top: 15px; right: 10px; z-index: 2;}
+.Banner-box .B-img { position: absolute; width: 200%; height: 319px; top: 0; left: 0; z-index: 1;}
+.Banner-box .B-img li { float: left; width: 684px;}
+.Banner-box .B-index { height: 17px; padding: 0; position: absolute; right: 10px; bottom: 15px; z-index: 2;}
+.Banner-box .B-index li { width: 17px; height: 17px; float: left; margin-left: 10px; background: #575757; border-radius: 100%; cursor: pointer;}
+.Banner-box .B-index li.choose { width: 18px; background: #61ad02;}
+
+.Jingpin-box { width: 352px; float: left;}
+.Jingpin-box ul { overflow: hidden;}
+.Jingpin-box ul li { float: left; width: 352px; height: 24px; line-height: 24px; margin-top: 5px; overflow: hidden;}
+.Jingpin-box ul li a { width: 297px; height: 21px; line-height: 21px; font-size: 14px; position: relative; padding:0 55px 0 0;}
+.Jingpin-box ul li a .time { position: absolute; left: 305px; top: 0px; display: block; width: 50px; height: 21px; color: #9d9d9d; text-align: center; font-size: 13px;}
+.Jingpin-box ul li a:hover .time { color: #f43838;}
+.Jingpin-box ul li.first { height: 130px; background: #f1f1f1; margin: 20px 0 10px 0;}
+.Jingpin-box ul li.first a { width: 100%; padding: 0;}
+.Jingpin-box ul li .img { width: 135px; height: 130px; margin-right: 20px; overflow: hidden; float: left;}
+.Jingpin-box ul li .info { height: 130px; padding-right: 20px; display: table-cell; vertical-align: middle;}
+.Jingpin-box ul li .info p { color: #a4aeba; margin-top:10px;}
+.Jingpin-box ul li .info p a { color: #a4aeba;}
+.Jingpin-box ul li .info p a:hover { color: #f00;}
+
+.Lianhuanhua-box { width: 283px; float: right;}
+.Lianhuanhua-box .Lian-huanhua-list { overflow: hidden;}
+.Lianhuanhua-box .Lian-huanhua-list li { float: left; width: 140px; height: 39px; line-height: 39px; font-size: 16px; color: #000; border-left: 1px solid #d4d8e2; border-top: 4px solid #d4d8e2; border-bottom: 1px solid #d4d8e2; background: #f1f1f1; text-align: center; cursor: pointer;}
+.Lianhuanhua-box .Lian-huanhua-list li.choose { background: #fff; border-bottom: none; border-top-color:#0abb55;}
+.Lian-huanhua-con { margin-top: 6px; overflow: hidden;}
+.Lian-huanhua-con li { display: none;}
+.Lian-huanhua-con li .img { position: relative; width: 283px; height: 132px; overflow: hidden;}
+.Lian-huanhua-con li .img p { position: absolute; width: 253px; height: 30px; color: #fff; line-height: 30px; padding: 0 15px; background: rgba(0,0,0,0.8); background: #000\9; left: 0; bottom: 0;}
+.Lian-huanhua-con li .index-list { padding-top: 12px; margin-left: -1px; overflow: hidden;}
+.Lian-huanhua-con li .index-list a {
+	display: block;
+	width: 285px;
+	height: 24px;
+	line-height: 21px;
+	font-size: 14px;
+	position: relative;
+	margin-top: 5px;
+	padding: 0 55px 0 0;
+	float: left;
+	overflow: hidden;
+}
+
+.Lian-huanhua-con li .index-list a .time {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    display: block;
+    width: 50px;
+    height: 21px;
+    color: #9d9d9d;
+    text-align: center;
+    font-size: 13px;
+}
+
+.Lpl-saishi-box { padding: 10px 0;}
+
+.Lanmu-index-box { overflow: hidden;}
+.Lanmu-index-box .L-i-left,.Lanmu-index-box .L-i-right { width: 321px;}
+.L-i-con-title { border-bottom: 2px solid #000; height: 50px; position: relative; background-image: url(http://static.tuwan.com/templet/lol/index3/images/lanmu-ico.png); background-repeat: no-repeat; font-weight: normal;}
+.L-i-con-title span { display: inline-block; position: absolute; bottom: 7px; left: 50px;}
+.L-i-con-title a { display: inline-block; position: absolute; bottom: 7px; right: 0;}
+.L-i-con-title.du { background-position: 0 10px;}
+.L-i-con-title.kan { background-position: 0 -59px;}
+.L-i-con-title.ting { background-position: 0 -125px;}
+.L-i-con-title.xue { background-position: 0 -195px;}
+.du-list { height: 165px; background: url(http://static.tuwan.com/templet/lol/index3/images/du-list.png) center center no-repeat; padding-top: 17px;}
+.du-list li { height: 24px; line-height: 18px; padding: 5px 10px 0 25px; background: url(http://static.tuwan.com/templet/lol/index3/images/du-list-sanjiao.png) 13px center no-repeat;}
+.ting-list { margin-left: -21px; overflow: hidden;}
+.ting-list li {width:150px; height:36px; background:url(http://static.tuwan.com/templet/lol/new2015/images/sczs.jpg) no-repeat; font-size:11px;margin:15px 0 0 21px; float:left;}
+.ting-list li a { display: inline-block; padding:10px 0 0 44px; color: #fff;}
+.kan-list li { height: 78px; margin: 13px 0 0 0;}
+.kan-list li a { width: 100%; padding: 0;}
+.kan-list li .img { width: 131px; height: 78px; margin:0 12px; overflow: hidden; float: left;}
+.kan-list li .info {width: 166px; height: 78px; display: table-cell; vertical-align: middle;}
+.kan-list li .info h4 { color: #3eba01;}
+.kan-list li .info p { color: #000; line-height: 20px;}
+.xue-list { height: 85px;}
+
+
+.Tooles-box { height: 35px; margin-top: 12px; background: url(http://static.tuwan.com/templet/lol/index3/images/kjrk.jpg) 0 center no-repeat; padding-left: 44px;}
+.Tooles-box a { display: inline-block; width: 70px; height: 35px; line-height: 35px; padding-left: 54px; float: left; color: #000;}
+.Tooles-box a:hover { color: #0abb55;}
+.Tooles-box ul { margin: 5px 0 0 -10px; overflow: hidden;}
+.Tooles-box li { float: left; margin:14px 0 0 10px;}
+.Tooles-box li a { display: block; width: 120px; height: 35px; line-height: 35px; text-align: center; background: #e6e6e6; color: #030417;}
+.Tooles-box li a:hover { background: #61ad02; color: #fff;}
+
+.Title-index { font-size: 21px; color: #000; position: relative;}
+.Title-index .more { font-size: 14px; font-weight: normal; position: absolute; right: 0; bottom: 0;}
+
+.Banben-info { margin:20px 0 0 -1px;}
+.Ban-name { width: 14px; height: 77px; padding: 108px 19px; margin-left: 1px; font-size: 16px; color: #fff; line-height: 19px; float: left; background-position: -202px 59px; background-color: #63ad03; cursor: pointer;}
+.Ban-info { /*width: 578px;*/width: 0px; height: 293px; float: left; position: relative; overflow: hidden;}
+.Ban-info i { display: block; width: 10px; height: 19px; background-position: 0 -98px; position: absolute; left: 0; top: 50%; margin-top: -10px;}
+.Ban-info ul { height: 293px; overflow: hidden; text-align: center; margin-left: 30px; float: left; display: inline-block;}
+.Ban-info ul.other li{ margin:12px 0 0 4px;}.Ban-info ul.other li.ul-title {margin:5px 0 10px 0px;}
+.Ban-info ul li.ul-title { width: 100%; height: 47px; margin:5px 0 10px 5px; line-height: 47px; font-weight: bold; color: #1b1b1b; cursor: pointer; background: url(http://static.tuwan.com/templet/lol/new2015/images/title-nav.png) center 37px no-repeat;}
+.Ban-info ul li { float: left; margin:12px 0 0 5px;}
+.Ban-info ul li a { display: block; border: 1px solid #c5c5c5; padding: 1px;}
+.Ban-info ul li a:hover { border: 1px solid #70bb02;}
+.Ban-info ul li a.More { width: 45px; height: 45px; font-size: 16px; background: #c1c1c1; color: #fff; border: none; padding: 0; line-height: 30px; text-align: center;font-family: Arial;}
+.Ban-info ul li a.More span { display: block; font-size: 12px; margin-top: -15px;}
+.Ban-info ul li a.More:hover { background: #60ac03;}
+
+.Lol-event { overflow: hidden;}
+.Lol-event ul{ margin: 25px 0 0 -10px;}
+.Lol-event ul li { width: 224px; height: 126px; float: left; margin-left:10px; overflow: hidden;}
+.Lol-event ul li a { display: block; position: relative;}
+.Lol-event ul li a img{transition: all 0.8s;-webkit-transition: all 0.8s;-moz-transition: all 0.8s;-ms-transition: all 0.8s; -o-transition: all 0.8s;}
+.Lol-event ul li a span { display: block; position: absolute; text-align: center; }
+.Lol-event ul li a .name { font-size: 24px; width: 100%;color: #fff; top: 20px; left: 0;}
+.Lol-event ul li a .time { width: 117px; height: 25px; line-height: 25px; background: rgba(0,0,0,0.7); background: #000\9; border-radius: 5px; color: #fff; top: 55px; left: 50%; margin-left: -59px;}
+.status { width: 100%; height: 30px; line-height: 30px; bottom: 0px; left: 0px; font-size: 14px; color: #fff;}
+.gameing { background: #f43838;}.over { background: #575757;}.nostar { background: #e7c22e;}
+.Lol-event ul li a:hover img { transform:scale(1.2); -webkit-transform:scale(1.2); -moz-transform:scale(1.2); -ms-transform:scale(1.2); -o-transform:scale(1.2);}
+
+.Jingxuan { width: 675px; float: left;}
+.Jingxuan ul { overflow: hidden;}
+.Jingxuan ul li { width: 100%; height: 50px; overflow: hidden; float: left; background: #f3f3f3; margin-top: 3px; display: inline-block; cursor: pointer;}
+.Jingxuan ul li span { display: inline-block; height: 50px; line-height: 50px; float: left;}
+.Jingxuan ul li span img { *padding-top: 7px\9;}
+.Jingxuan ul li .T-name { font-size: 14px; padding: 0 17px;}
+.Jingxuan ul li .G-name1,.Jingxuan ul li .G-name2 { font-weight: bold; width: 50px;margin:0 5px; overflow: hidden;}.Jingxuan ul li .G-name1 {text-align: left;}.Jingxuan ul li .G-name2 {text-align: right;}
+.Jingxuan ul li .Xing { width: 130px; background:#f3f3f3 url(http://static.tuwan.com/templet/lol/new2015/images/xing.png) 0 14px no-repeat; margin:0 60px 0 35px;}
+.Jingxuan ul li .Xing i { display: block; height: 50px; background: #f3f3f3 url(http://static.tuwan.com/templet/lol/new2015/images/xing.png) 0 -63px no-repeat;}
+i.s1 { width: 20%}i.s2 { width: 40%}i.s3 { width: 60%}i.s4 { width: 80%}i.s5 { width: 100%}
+.Jingxuan ul li a { display: inline-block; width: 76px; height: 32px; line-height: 32px; text-align: center; margin: 9px 0 0 10px; border-radius: 5px; background: linear-gradient(top, #ffffff, #c7c3c3);background: -webkit-linear-gradient(top, #ffffff, #c7c3c3); background: -moz-linear-gradient(top, #ffffff, #c7c3c3);background: -ms-linear-gradient(top, #ffffff, #c7c3c3);background: -o-linear-gradient(top, #ffffff, #c7c3c3); background: #c7c3c3\9;}
+.Jingxuan ul li a:hover { background: linear-gradient(top, #6fc404, #62ae02);background: -webkit-linear-gradient(top, #6fc404, #62ae02); background: -moz-linear-gradient(top, #6fc404, #62ae02);background: -ms-linear-gradient(top, #6fc404, #62ae02);background: -o-linear-gradient(top, #6fc404, #62ae02); background: #62ae02\9; color: #fff;}
+
+.Say-esport { width: 455px; margin-left: 30px; float: left;}
+.Say-esport ul li a { display: block; overflow: hidden;}
+.Say-esport ul li a img { float: left;}
+.Say-esport ul li a .info { width: 260px; float: left; margin-left: 20px; color: #808080; cursor: pointer\9;}
+.Say-esport ul li a .info h3 { font-size: 14px; color: #1b1b1b; font-weight: normal; line-height: 22px;}
+.Say-esport ul li a .info p { padding-top: 10px; font-size: 13px;}
+.Say-esport ul li a:hover .info h3 { color: #f43838;}
+.Type-video { background: #f3f3f3; margin-top: 10px; padding: 20px 30px;}
+.Type-video p { padding-bottom: 10px; color: #191919;}
+.Type-video a { padding-left: 20px;}.Type-video a:hover { color: #70bb02;}
+
+.Video-box { width: 680px; float: left;}
+.Spo-list-nav.Video-nav li { width: 136px;}
+.Video-list-con ul { display: none; margin: -10px 0 0 -44px;}
+.Video-list-con ul li { width: 197px; float: left; margin:36px 0 0 44px;}
+.Video-list-con ul li img { width:197px; height: 116px;}
+.Video-list-con ul li p { height: 40px; line-height: 20px; overflow: hidden;}
+.Video-list-con ul li p strong { color: #70bb02; font-weight: normal;}
+.Video-list-con ul li p.num { color: #5e5e5e; font-size: 12px; height: 20px; padding-top: 6px;}
+.Video-list-con ul li:hover img {filter:alpha(opacity=50);-webkit-opacity:0.5;-moz-opacity:0.5;-ms-opacity:0.5;-o-opacity:0.5;opacity: 0.5;}
+.Video-hot { width: 430px; float: left; margin-left: 50px;}
+.Video-hot ul { overflow: hidden; margin-top: 17px;}
+.Video-hot ul li { width: 100%; float: left; margin-top: 17px; display: inline-block; overflow: hidden;}
+.Video-hot ul li a { display: block; height: 19px; position: relative; line-height: 19px;}
+.Video-hot ul li a div { cursor: pointer;}
+.Video-hot ul li a .Img { display: none; position: absolute; width: 120px; height: 92px; top: 20px; right: 20px; background: #111;}
+.Video-hot ul li a .Img img { width: 120px; height: 92px;}
+.Video-hot ul li a .Img i { display: none; width: 120px; height: 92px; background: url(http://static.tuwan.com/templet/lol/new2015/images/play.png) center center no-repeat; position: absolute; top: 0px; left: 0px;transition: all 2s;-webkit-transition: all 2s;-moz-transition: all 2s;-ms-transition: all 2s; -o-transition: all 2s;}
+.Video-hot ul li a .On-seq { display: none;position: absolute; width: 122px; height: 55px; line-height: 55px; background: #f43838; font-size: 40px; color: #fff; font-weight: bold; text-align: center;}
+.Video-hot ul li a .On-seq span { font-size: 10px; color: #ca2424; font-weight: normal;}
+.Video-hot ul li a .seq { position: absolute; width: 22px; height: 19px; background: #bbbbbb; color: #fff; text-align: center;}
+.Video-hot ul li a .title { position: absolute; left: 32px;}
+.Video-hot ul li a .num { position: absolute; right: 0; color: #5e5e5e; font-size: 12px;}
+.Video-hot ul li a .time { display: none; position: absolute; font-size: 12px;}
+.Video-hot ul li.choose a { height: 130px; background: #f3f3f3;}
+.Video-hot ul li.choose a .Img { display: block;}
+.Video-hot ul li.choose a .Img img {filter:alpha(opacity=50);-webkit-opacity:0.5;-moz-opacity:0.5;-ms-opacity:0.5;-o-opacity:0.5;opacity: 0.5;} 
+.Video-hot ul li.choose a .Img i { display: block;}
+.Video-hot ul li.choose a .Img:hover i {transform:rotate(360deg);-ms-transform:rotate(360deg);-moz-transform:rotate(360deg);-webkit-transform:rotate(360deg);-o-transform:rotate(360deg);}
+.Video-hot ul li.choose a .On-seq { display: block; }
+.Video-hot ul li.choose a .seq { display: none; }
+.Video-hot ul li.choose a .title { top: 69px; left: 16px; font-weight: bold; width: 260px; height: 19px; overflow: hidden;}
+.Video-hot ul li.choose a .num { top: 97px; left: 16px;} .Video-hot ul li.choose a .num span { color: #70bb02;}
+.Video-hot ul li.choose a .time { display: block; top: 97px; left: 240px;}
+
+.Lol-hero { float: left; width: 634px; height: 396px; padding-left: 118px; margin-top: 30px; position: relative; border: 2px solid #61ad02; *overflow: hidden; background: #f3f3f3;}
+.Lol-hero .Lol-hero-type { position: absolute; width: 92px; height: 394px; top: -2px; left: -2px;}
+.Lol-hero .Lol-hero-type li { float: left; width: 82px; height: 77px; margin-right:10px;line-height: 77px; text-align: center; font-size: 14px; font-weight: bold; color: #fff; background: #171718; border-top: 1px solid #303030; border-bottom: 1px solid #000; cursor: pointer; position: relative;}
+.Lol-hero .Lol-hero-type li i { position: absolute; display: block; width: 10px; height: 19px; background-position: 0 -98px; right: -10px; top: 50%; margin-top: -10px; display: none;}
+.Lol-hero .Lol-hero-type li.choose { background: #61ad02; border: none; height: 84px; line-height: 84px;}.Lol-hero .Lol-hero-type li.choose i { display: block;}
+.Lol-hero .Lol-hero-list { float: right; height: 390px; overflow: hidden;}
+.Lol-hero-list ul { width: 638px; height: 370px; position: relative; margin: 10px 2px 0 -16px; padding-right: 15px; text-align: center; overflow-y: scroll; overflow-x: hidden; display: none;}
+.Lol-hero-list ul li { float: left; margin: 10px 0 0 16px; position: relative; cursor: pointer;}
+.Lol-hero-list ul li i { display: none; width: 57px; height: 57px; border: 2px solid #70bb02; position: absolute; top: 0; left: 0;}
+.Lol-hero-list ul li:hover i { display: block;}
+.Lol-hero-list ul .hero p { padding-top: 3px; text-align: center; height: 24px; width: 61px; overflow: hidden;}
+.Lol-hero-list ul .Lol-hero-info { width: 639px; height: 390px; position: absolute; top: 0; left: 0; background: #f3f3f3; z-index: 5;}
+/*.Lol-hero .Lol-hero-list { float: right; height: 390px; overflow: hidden;}
+.Lol-hero-list ul { width: 638px; height: 370px; position: relative; margin: 10px 0 0 0px; padding-right: 10px; display: none;}
+.Lol-hero-list ul .hero { float: left; margin: 10px 0 0 16px; position: relative; cursor: pointer;}
+.Lol-hero-list ul .hero i { display: none; width: 57px; height: 57px; border: 2px solid #70bb02; position: absolute; top: 0; left: 0;}
+.Lol-hero-list ul .hero:hover i { display: block;}
+.Lol-hero-list ul .hero p { padding-top: 3px; text-align: center; height: 24px; width: 61px; overflow: hidden;}
+.Lol-hero-list ul .Lol-hero-info { width: 640px; height: 390px; padding-left: 15px; position: absolute; top: -900px; left: -7px; *left:-21px; z-index: 5; background: #f3f3f3; font-size: 12px;}
+.Lol-hero-list ul .Lol-hero-info .close-x { position: absolute; width: 53px; height: 27px; line-height: 27px; background-color: #f43838; right: 0; top: 0; color: #fff; padding-left: 15px; background-position: -100px -330px; cursor: pointer;}
+.Lol-hero-list ul .Lol-hero-info .L-info { width: 315px; padding-top: 25px; float: left; position: relative;}
+.Lol-hero-list ul .Lol-hero-info .L-info  ul { display: block;}
+.Lol-hero-list ul .Lol-hero-info .L-info .L-img { position: absolute; top: 25px; left: 0;}
+.Lol-hero-list ul .Lol-hero-info .L-info .name { padding: 0 0 10px 75px;}
+.Lol-hero-list ul .Lol-hero-info .L-info .name h3 { font-size: 18px; padding-bottom: 5px; cursor: pointer;}
+.Lol-hero-list ul .Lol-hero-info .L-info .name p span { display: inline-block; width: 178px; height: 11px; line-height: 11px; background: #e0e0e0;}
+.Lol-hero-list ul .Lol-hero-info .L-info .name p span i { display: inline-block; height: 11px; background: #f43838;}
+.zhuangbei h4 span,.jineng h4 span,.tianfu h4 span { padding-right: 30px; color: #61ad02; font-weight: normal; background-position: -430px -353px;}
+.zhuangbei ul { width: 315px; height: 44px; margin: 15px 0 0 -8px; padding: 0;}
+.zhuangbei ul li { float: left; height: 44px; margin-left: 8px;}
+.jineng p { padding: 15px 0 0 0; height: 24px; line-height: 24px;}
+.jineng p span { display: inline-block; width: 24px; height: 24px; text-align: center; cursor: pointer; background-position: 0px -425px; margin: 0 15px 0 10px;}
+.jineng p span:hover { background: #f43838; color: #fff; border-radius: 3px;}
+.tianfu ul { width: 315px; height: 100%;}
+.tianfu ul li { line-height: 22px;}
+.tianfu ul li span { float: right;}
+.Lol-hero-list ul .Lol-hero-info .R-list { width: 250px; float: left; margin-left: 40px; padding-top: 10px; display: inline-block;}
+.Lol-hero-list ul .Lol-hero-info .R-list ul { display: block; width: 100%; height: auto; padding: 0; margin: 0;}
+.Lol-hero-list ul .Lol-hero-info .R-list ul li { width: 100%; margin: 8px 0 0 0; float: left; display: inline-block;}
+.Lol-hero-list ul .Lol-hero-info .R-list ul li span { float: right; color: #c9c9c9;}
+.Lol-hero-list ul .Lol-hero-info .R-list .R-video { padding: 0; margin-top: 12px;}
+.Lol-hero-list ul .Lol-hero-info .R-list .R-video ul { margin-left: -20px; width: 270px;}
+.Lol-hero-list ul .Lol-hero-info .R-list .R-video ul li { width: 114px; margin: 10px 0 0 20px;}.Lol-hero-list ul .Lol-hero-info .R-list .R-video ul li i { width: 114px; height: 64px;}*/
+
+.Lol-hot { float: left; width: 374px; margin:12px 0 0 30px;}
+.Lol-hot ul { height:362px; overflow: hidden;}
+.Lol-hot ul li { width: 100%; position: relative; padding: 75px 0 12px 0; border-top: 1px dashed #cacaca; margin-top: -1px; float: left;}
+.Lol-hot ul li .img { display: block; position: absolute; top: 11px; left: 0;}
+.Lol-hot ul li .user { width: 298px; position: absolute; right: 0; top: 20px;}
+.Lol-hot ul li .user h4 span { font-weight: normal; float: right; color: #f43838; font-size: 12px; cursor: pointer;}
+.Lol-hot ul li .user p {width: 298px; height: 18px; line-height: 18px; overflow: hidden; position: absolute; top: 25px; right: 0; cursor: pointer; font-size: 12px;}
+.Lol-hot ul li .user p:hover { height: auto; background: #f43838; color: #fff;}
+.Lol-hot ul li .text { line-height: 19px; font-size: 13px;}
+.Lol-hot ul li .text span { float: right; color: #9d9d9d; font-size: 12px;}
+
+.Lol-images { margin: 25px 0 0 0; overflow: hidden\9;}
+.Lol-images ul { height: 293px; position: relative; padding-left: 396px; margin-top: 25px; overflow: hidden\9;}
+.Lol-images ul .first { position: absolute; top: 0px; left: 0; width: 395px; height: 273px; margin-left: 0;}
+.Lol-images ul li { width: 176px; height: 126px; float: left; margin: 20px 0 0 15px;}
+.Lol-images ul li a { display: block; position: relative;}
+.Lol-images ul li a p { width: 96%; height: 50px; padding: 5px 2%; line-height: 24px; color: #fff; background: rgba(0,0,0,0.7); background: #000\9; position: absolute; left: 0; bottom: 0; display: none\9;
+    transform:perspective(300px) rotateX(-90deg);
+    -webkit-transform:perspective(300px) rotateX(-90deg);
+    -moz-transform:perspective(300px) rotateX(-90deg);
+    -ms-transform:perspective(300px) rotateX(-90deg);
+    -o-transform:perspective(300px) rotateX(-90deg);
+    transform-origin:50% 100%;
+    -webkit-transform-origin:50% 100%;
+    -moz-transform-origin:50% 100%;
+    -ms-transform-origin:50% 100%;
+    -o-transform-origin:50% 100%;
+    transition: all 0.3s;-webkit-transition: all 0.3s;-moz-transition: all 0.3s;-ms-transition: all 0.3s; -o-transition: all 0.3s;
+}
+.Lol-images ul li a:hover p { display: block\9;
+    transform:perspective(300px) rotateX(0deg);
+    -webkit-transform:perspective(300px) rotateX(0deg);
+    -moz-transform:perspective(300px) rotateX(0deg);
+    -ms-transform:perspective(300px) rotateX(0deg);
+    -o-transform:perspective(300px) rotateX(0deg);
+}
+.Lol-images ul li a i { display: none; width: 172px; height: 122px; border: 2px solid #70bb02; position: absolute; top: 0; left: 0;}
+.Lol-images ul li.first a p { text-align: center; line-height: 50px;}
+.Lol-images ul li.first a i { width: 391px; height: 269px;}
+.Lol-images ul li a:hover i { display: block;}
+
+.Answers-left { width: 625px; float: left; padding: 30px 0 0 0;}
+.Answers-right { width: 480px; float: left; padding:18px 0 0 0; margin-left: 55px; display: inline-block;}
+.Answers-right h3 { font-size: 20px; color:#0f1416; font-weight: normal;}
+.Answers-text { margin: 5px 0 0 0;}
+.Answers-text li { width: 480px; float: left; height: 22px; line-height: 22px; margin-top: 15px;}
+.Answers-text li .time { float: right; color: #9d9d9d;}
+.Answers-text li a span { display: inline-block; width: 47px; height: 22px; color: #7a7c80; background: #60ac03; text-align: center; color: #fff; margin-right: 20px;}
+.Answers-img { margin-left: -27px; overflow: hidden;}
+.Answers-img li { float: left; width: 299px; margin-left: 27px;}
+.Answers-img li p { width: 279px; height: 42px; line-height: 42px; font-size: 13px; color: #fff; padding:0 10px; background:#191919;}
+.Comm_info { text-align: left; padding-top: 12px; overflow: hidden;}
+.Comm_info a {padding: 5px 20px;font-size: 14px;font-family: "宋体";color: #fff;display: inline-block; margin: 0 2px 2px 0; background: #60ac03;}
+.Comm_info a:hover { background: #f43838;}
+
+.Answers-search {/* padding: 20px 12px 20px; */overflow: hidden; margin-top: 30px; border-top: 1px dashed #cacaca;}
+#topic_index_main_v2 .Insider .summary { padding: 0; margin: 0; background: #fff;}
+#topic_index_main_v2 .Insider .summary .st2 p { color: #f43838;}
+.Answers-form { width: 288px; height: 100px; float: left; border-right: #e1e1e1 solid 1px;}
+.Answers-form p,.Answers-tips h3 { font-size: 17px; color: #171717; padding-bottom: 10px; font-weight: normal;}
+.Answers-form form { border: 1px solid #d1cfcf; background: #f1f1f1; padding: 1px; width: 254px;}
+.Answers-form .An-text { width: 201px; height: 33px; padding: 0 10px; background: #f1f1f1; line-height: 33px; float: left; border:none;}
+.Answers-form .An-but { width: 33px; height: 33px; float: left; background-position: 4px -159px; background-color: #60ac03; border:none; cursor: pointer;}
+.Answers-tips { width: 533px; height: 100px; float: left; border-right: #e1e1e1 solid 1px; padding: 0 25px;}
+.Answers-tips p { font-size: 13px; color: #6e6e6e;}
+.Answers-anbut { width: 237px; height: 91px; padding:5px 0 0 26px; float: left;}
+.Answers-anbut a { display: block; width: 237px; height: 91px;}
+.Answers-anbut a:hover { background: #0059c5;}
+.Answers-con { overflow: hidden;}
+
+.Hero-dynamic { width: 90px; background: #e6e6e6; text-align: center; position: fixed; right: 15px; top: 50%; }
+.Hero-dynamic .close { position: absolute; width: 18px; height: 18px; background-position: -86px -168px; top: -21px; right: 0;}
+.Hero-dynamic .close:hover { background-position: -105px -168px;}
+.Hero-title { background-color: #f43838; background-position: 37px -228px; height: 40px; line-height: 30px; font-size: 14px; color: #fff; cursor: pointer;}
+.Hero-dynamic ul { padding: 10px 0;}
+.Hero-dynamic ul li a{ display: block; padding: 5px 0;}.Hero-dynamic ul li a:hover { background: #19191b;}
+.Hero-dynamic ul li img { border: 1px solid #c5c5c5; padding: 1px;}
+
+.Content-left { width: 805px; float: left;}
+.News-list-box { overflow: hidden;}
+.News-list-box li { width: 100%; height: 117px; border-bottom: 1px dashed #cacaca; padding: 35px 0; position: relative; float: left;}
+.News-list-box li img { position: absolute; top: 35px; left: 0;}
+.News-list-box li:hover img {filter:alpha(opacity=50);-webkit-opacity:0.5;-moz-opacity:0.5;-ms-opacity:0.5;-o-opacity:0.5;opacity: 0.5;}
+.News-list-box li .title { width: 575px; position: absolute; top: 40px; left: 228px; font-size: 14px; font-weight: bold;}
+.News-list-box li .title span { float: right; font-weight: normal; color: #9c9c9c;}
+.News-list-box li .type { display: block; width: 40px; height: 20px; text-align: center; line-height: 20px; color: #fff; position: absolute; left: 228px; top: 72px;}
+.type.green { background: #61ad02;}
+.News-list-box li .info { line-height: 21px; position: absolute; top: 72px; left: 228px; text-indent:60px;}
+.News-list-box li .key { position: absolute; left: 228px; top: 136px;} .News-list-box li .key a { color: #9c9c9c; padding: 0 8px 0 0;}
+
+.Content-info-box h1 { font-size: 30px; color: #1b1b1b; text-align: center;}
+.Content-info-box .Text-style { text-align: center; color: #7a7c80; padding: 10px 0 20px; font-size:12px; }
+.Content-info-box .Text-style a { color: #61ad02;}
+.Content-info-box .Text-nav { width: 600px; margin: 0px auto 30px;}
+.Content-info-box .Text-nav h4 { background: #61ad02; text-align: center; height: 35px; line-height: 35px; color: #fff; font-size: 15px; font-weight: normal;}
+.Content-info-box .Text-nav ul { border-top: none; padding: 10px 0; overflow: hidden; background: #f7f7f7;}
+.Content-info-box .Text-nav ul li { width: 235px; height: 30px;overflow:hidden; line-height: 30px; padding:0 30px; float: left; font-size: 13px; border-left: #61ad02 solid 1px; margin-left: -1px;}
+.Content-info-box .Text-nav ul li.link { margin-top: 0;}.Content-info-box .Text-nav ul li.link a { color: #f43838;}
+
+.Text-content { padding: 0 25px; color: #2f312e; text-align: center;}
+.Text-content h3 {height: 65px; line-height: 65px; margin: 40px 0 20px; font-size: 22px; color: #fff; text-align: left; position: relative; border-bottom: 4px solid #60ad02;}
+.Text-content h3 span {border-bottom: 4px solid #707070;height: 55px;display: inline-block;color: #60ad02;padding-left: 83px; padding-top: 10px;}
+.Text-content h3 i { display: inline-block; width: 76px; height: 65px; position: absolute; left: 0; bottom: 0; padding: 0; margin: 0; background:url(http://static.tuwan.com/templet/lol/new2015/images/c-g2.png) 0 0 no-repeat;}
+.Text-content p { margin:24px 0;line-height: 200%;font-size: 16px;font-family: 微软雅黑, 'Microsoft YaHei'; text-align: left; text-indent: 2em;}
+.Text-content h4 { font-weight: normal; font-size: 14px;}
+.Pra-box { width: 240px; margin: 0px auto; padding: 30px 0; overflow: hidden;}
+.Pra-box a { display: block; width: 98px; height: 43px; text-align: center; padding-top: 55px;color: #fff; background-image: url(http://static.tuwan.com/templet/lol/new2015/images/ico-bg.png); font-size: 12px;}
+.Pra-box .White a.support { background-position: 0 -481px; float: left;}.Pra-box .White a.support:hover { background-position: -295px -481px;}
+.Pra-box a.support { background-position: -145px -482px; float: right;}.Pra-box a.support:hover { background-position: -440px -482px;}
+
+.Page-box { margin: 50px 0 30px; text-align: center;}
+.Page-box li { display: inline; cursor: pointer;}
+.Page-box a,.Page-box span { display: inline-block; margin: 0 4px; font-size: 14px; padding: 4px 10px; background: #ebebeb;}
+.Page-box li.thisclass a { color: #61ad02;}
+.Page-box a:hover,.Page-box li.thisclass a:hover { background: #61ad02; color: #fff;}
+
+.Content-right { width: 360px; float: right; background: #f7f7f7; margin-top: 34px; display: inline-block;}
+.Ad-right {padding:0;text-align:center}
+.R-form { overflow: hidden; padding: 0 15px;}
+.R-form .An-text { border: 1px solid #d1cfcf; width: 232px; height:29px; line-height: 29px; padding: 0 5px; background: #fff; float: left;}
+.R-form .An-but { border: none; width: 82px; height: 31px; background:url(http://static.tuwan.com/templet/lol/new2015/images/ico-bg.png) -1px -327px; float: left; margin-left: 4px; display: inline-block; cursor: pointer;}
+.R-form .An-but:hover { background-position: -1px -358px;}
+.R-key { margin: 15px; } .R-key a { color: #9c9c9c; padding-right: 15px; white-space:nowrap;}.R-key a:hover { color: #f43838;}
+.Gonglv { overflow: hidden;/* padding: 0 15px;*/ text-align: center;}
+.Gonglv .g-title { display: block; position: relative;}
+.Gonglv .g-title span { display: block; position: absolute; top: 0; left: 0; text-align: center; width: 100%; height: 63px; line-height: 63px; color: #fff; font-size: 20px;}
+.Gonglv ul { margin: 5px 0 0 -5px;}
+.Gonglv li { float: left; margin:5px 0 0 5px}
+.Gonglv li a { display: block; width: 91px; height: 30px; text-align: center; background: #e7e7e7;}
+.Gonglv li a:hover { background: #61ad02; color: #fff;}
+
+.Zhuanqu-box,.Lol-banlv,.R-hot-text,.R-pinglun,.R-video { padding: 0 15px;}
+.Zhuanqu-box ul { overflow: hidden; margin: 10px 0 0 0;}
+.Zhuanqu-box ul li { position: relative; float: left; width: 100%; height: 24px; line-height: 24px; margin: 5px 0;}
+.Zhuanqu-box ul li img,.Zhuanqu-box ul li .key { position: absolute; display: none;}
+.Zhuanqu-box ul li .key a { color: #9c9c9c; font-size: 12px; padding-right: 7px;}
+.Zhuanqu-box ul li .title { position: absolute; left: 0; top: 0;}
+.Zhuanqu-box ul li .time { position: absolute; right: 0; top: 0; color: #9d9d9d; font-size: 12px;}
+.Zhuanqu-box ul li.choose { border-bottom: 1px dashed #cacaca; height: 54px; padding: 5px 0 15px;}
+.Zhuanqu-box ul li.choose img { display: block; top: 5px; left: 0}
+.Zhuanqu-box ul li.choose .title { top: 8px; left: 110px; font-weight: bold; width: 217px; height: 24px; overflow: hidden;}
+.Zhuanqu-box ul li.choose .key { top: 32px; left: 110px; display: block;}
+.Zhuanqu-box ul li.choose .time { top: 32px; right: 0;}
+
+.Lol-banlv ul { overflow: hidden; margin-top: 10px;}
+.Lol-banlv ul li { float: left; margin-top:10px;}
+.Lol-banlv ul li a { display: block; position: relative; height: 54px; padding-left: 113px;}
+.Lol-banlv ul li a img { position: absolute; top: 0; left: 0;}
+.Lol-banlv ul li a .title { padding-top: 5px;}
+.Lol-banlv ul li a .title p { color: #9c9c9c;}
+
+.R-hot-text ul li { width: 100%; height: 15px; line-height: 15px; margin-top: 20px; overflow: hidden;}
+.R-hot-text ul li span { background: #cacaca; display: inline-block; width: 15px; height: 15px; margin-right: 12px; text-align: center; color: #fff;}
+
+.R-pinglun ul { margin-top: 10px; overflow: hidden;}
+.R-pinglun ul li { width: 100%; overflow: hidden; position: relative; margin-top: 17px; float: left;}
+.R-pinglun ul li img { position: absolute; top: 0; left: 0;}
+.R-pinglun ul li .p-info { padding-left: 53px;}
+.R-pinglun ul li .p-info .user { color: #cacaca;}
+.R-pinglun ul li .p-info .user a { display: inline-block; width: 100px; color: #61ad02; font-weight: bold;}
+.R-pinglun ul li .p-info p { padding-top: 5px;}
+.R-pinglun ul li .p-other { background: #ebebeb; padding:5px 10px; color: #929292; margin-top: 10px;}
+
+.R-video ul { margin: 0 0 0 -19px;}
+.R-video ul li { width: 155px; position: relative; float: left; margin:20px 0 0 19px;}
+.R-video ul li img { width:100%;}
+.R-video ul li i { display: none; filter:alpha(opacity=70);-webkit-opacity:0.7;-moz-opacity:0.7;-ms-opacity:0.7;-o-opacity:0.7;opacity: 0.7; width: 155px; height: 91px; background:#000 url(http://static.tuwan.com/templet/lol/new2015/images/play.png) center center no-repeat; position: absolute; top: 0; left: 0;}
+.R-video ul li p { padding-top: 8px; height: 43px; overflow:hidden;}
+.R-video ul li:hover i { display: block;}
+
+.Tuwan-jingxuan-box { margin-top: 35px; padding-bottom: 22px; border: 3px solid #f43837; overflow: hidden;}
+.Tuwan-jingxuan-box h3 { background-color: #f43837; height: 60px; line-height: 60px; padding: 0 5px;}
+.Tuwan-jingxuan-con { padding: 30px 8px 0; font-family: "宋体"; overflow: hidden;}
+.Tuwan-jingxuan-list { margin: 0px 0 0 -17px; font-size: 12px;}
+.Tuwan-jingxuan-list li { width: 183px; float: left; margin: 0 0 0 17px; background-color: #f8f8f8;}
+.Tuwan-jingxuan-list li p { width: 173px; height: 36px; overflow: hidden; padding: 10px 5px;}
+.Tuwan-jingxuan-list li .type { color: #abaaaa; height: 16px; line-height: 16px; padding: 0 5px 5px;}
+.Tuwan-jingxuan-list li .type .num { display: inline-block; height: 16px; padding-left: 18px; background-position: 0 -620px; float: left;}
+.Tuwan-jingxuan-list li .type .time { display: inline-block; float: right;}
+
+.Tuwan-jingxuan-con .Banner-box { width: 513px; height: 239px; float: left;}
+.Tuwan-jingxuan-con .Banner-box .B-img {width: 200%; height: 239px;}
+.Tuwan-jingxuan-con .Banner-box .B-img li { width: 513px;}
+.Tuwan-jingxuan-con .Banner-box .B-img li img { width: 100%;}
+.Banner-box .B-index { right: 30px; bottom: 10px; }
+
+.Tuwan-jingxuan-hot { float: left; padding: 5px 0 0 10px; width: 260px; overflow: hidden; background-color: #f8f8f8;}
+.Tuwan-jingxuan-hot li { width: 250px; height: 20px; line-height: 20px; padding: 13px 5px; float: left;}
+.Tuwan-jingxuan-hot li:hover { background-color: #efefef;}
+.Tuwan-jingxuan-hot li .index { display: inline-block; width: 20px; height: 20px; margin-right: 10px; background-color: #da0a36; color: #fff; text-align: center;}
+.Tuwan-jingxuan-hot li .num { display: inline-block; float: right; color: #c3c3c3;}
+.Tuwan-jingxuan-hot li:hover .num { color: #da0a36;}
+
+.Tucao-box .txt_835d4f { padding: 50px 0 0 0;} .Tucao-box .txt_835d4f span { color: #f43838; padding: 0 5px;}
+.Tucao-box .R-form { padding: 0;}
+.Tucao-box .comment_v2 .com-form .com-input { width: 705px; height: 24px;}
+.Tucao-box .comment_v2 .com-form .Reply_b a { background: #f43838;height: 33px; line-height: 33px; padding: 0 17px; color: #fff; text-align: center; font-size: 12px;}.Tucao-box .R-form .An-but:hover { background: #60ac03;}
+
+/*.Zhuanlan-box { height: 75px; border-top: 4px solid #61ad02; padding: 20px 0 0 195px; position: relative;}
+.Zhuanlan-box img { position: absolute; top: 20px; left: 0px;}
+.Zhuanlan-box .user { position: absolute; top: 20px; left: 90px;}
+.Zhuanlan-box .user p { font-size: 16px; padding: 15px 0 5px;}
+.Zhuanlan-box .user a { display: inline-block; width: 82px; height: 31px; line-height: 31px; background: #f43837; color: #fff; text-align: center;}
+.Zhuanlan-box .info { height: 55px; background: #f9f9f9; padding: 10px;}
+.Zhuanlan-box .info p { color: #a3a3a3;}.Zhuanlan-box .info p a{ color: #61ad02; padding-left: 8px;}
+.Zhuanlan-box .info .text { padding: 10px 25px 0; background: url(http://static.tuwan.com/templet/lol/new2015/images/yinhao.png) 0 7px no-repeat;}*/
+.Zhuanlan-box { border-top: 4px solid #61ad02; padding: 20px 0 0 0px;}
+.college { padding: 0; margin: 0;}
+.college_data { padding-left: 80px;}
+.college_txt { background: #f9f9f9;}.college_txt p { height: 30px;}
+
+.About-box { margin-top: 25px;}
+.About-box ul { overflow: hidden; float: left; width: 395px;}
+.About-box ul li { float: left; border-bottom: 1px dashed #cacaca; width: 100%; height: 35px; line-height: 35px; margin-bottom: -1px;}
+.About-box ul li span { float: right; color: #cacaca; padding-right: 3px; font-size: 13px;}
+.About-box ul li a:hover span { color: #f43838; font-size:13px;}
+.About-box img { float: right;}
+
+.New-img ul { margin: 25px 0 0 -8px; overflow: hidden;}
+.New-img ul li { float: left; width: 195px; position: relative; margin-left: 8px; display: inline-block;}
+.New-img ul li a img{width:195px;height:270px;}
+.New-img ul li i { width: 191px; height: 266px; border: 2px solid #70bb02; display: none; position: absolute; top: 0; left: 0;}
+.New-img ul li a:hover i { display: block;}
+.New-img ul li p { padding-top: 10px;}
+
+.pt15 { padding:15px 0; overflow: hidden;}
+.mt5 { margin-top: 5px; overflow: hidden;} .mt10 { margin-top: 10px; overflow: hidden;} .mt15 { margin-top: 15px; overflow: hidden;} .mt20 { margin-top: 20px; overflow: hidden;} .mt25 { margin-top: 25px; overflow: hidden;}.mt40 { margin-top: 40px; }
+
+
+
+.footer{ padding:0 30px; overflow:hidden; padding-top:10px; color:#513b73; text-align:center;}
+.footer a{ color:#513b73; padding:0 5px;}
+.footer a:hover{ text-decoration:underline}
+.footer span{ padding:0 5px;}
+
+.footer{
+    margin: auto;
+
+}
+.footer_all{
+    width: 1100px;
+    margin:auto;
+}
+.footer_left{
+    float: left;
+    width: 540px;
+    margin-top: 18px;
+    color: #525252;
+
+}
+.footer_left a{
+    color:  #525252;
+    display: block;
+}
+.footer_title{
+    border-bottom: 1px solid #b8b8b8;
+}
+.footer_right{
+    float: left;
+    width: 540px;
+    margin-top: 18px;
+    margin-left: 20px;
+    color: #525252;
+
+}
+.footer_right a{
+    color: #525252;
+    font-family: "宋体";
+    line-height: 150%;
+    text-align: left;
+    white-space: nowrap;
+    display: inline-block;
+    font-size: 12px;
+}
+.footer_info{
+    margin-top: 30px;
+    position: relative;
+    font-family: "宋体";
+
+}
+.footer_title_font{
+    background: #60ac03;
+    width: 125px;
+    height: 40px;
+    text-align: center;
+    padding-top: 5px;
+
+}
+.footer_title_font span,.footer_title_font span a{
+    font-size: 20px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+}
+.link{
+    margin-top: 30px;
+    text-align:left;
+}
+.link span{
+    padding: 0px 7px;
+    background: url('http://static.tuwan.com/templet/lol/images/newindex/qq.png') 0 0 no-repeat
+}
+.footer_org{    
+    width: 1040px;
+    padding: 10px 30px 0px;
+    overflow: hidden;
+    text-align: center;
+    color: #d9d9d9;
+    margin:58px auto 0  ;
+    line-height:24px;
+    font-size: 12px;
+}
+.footer_org a{
+    text-decoration: none;
+    color: #9d9d9d;
+}
+.footer_org a:hover { color: #f43838;}
+.g_logo{
+    float: left;
+}
+.g_info_left{
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    left: 250px;
+    text-align: left;
+}
+.g_info_left a,.g_info_right a { padding: 0;}
+.g_info_right{
+    width: 150px;
+    display: inline-block;
+    position: absolute;
+    text-align: left;
+    right: 0px;
+}
+.g_info a{
+    display: block;
+}
+.pagelink {
+  border: none;
+  background: #f7f7f7;
+  overflow: hidden;
+  padding: 0;
+  width: 100%;
+  margin: 0;
+}
+.pagelink p {
+background: #61ad02;
+  text-align: center;
+  height: 35px;
+  line-height: 35px;
+  color: #fff;
+  font-size: 15px;
+  font-weight: normal;
+}
+.pagelink li a{color:#171717;}
+
+
+.hero p {
+    color: #676972;
+    font-size: 12px;
+    height: 24px;
+    line-height: 24px;
+    overflow: hidden;
+    padding-top: 3px;
+    text-align: center;
+    width: 61px;
+}
+
+.yet { background: #fdae45}
+
+.g_info_left span{
+    text-decoration: none;
+    display:block;
+    float:left;
+}
+.g_info_left span:hover { color: #f43838;}
+
+.Zhuanqu-box ul li{
+    width:330px;
+    overflow:hidden;
+}
+
+.clear {
+    clear: both;
+    font-size: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    visibility: hidden;
+}
+
+.tw-lol-live-tips { position: fixed; left: 3px; bottom: 0;display:none;}
+.tw-lol-live-hide { width: 116px; height: 162px; position: absolute; background: url(http://static.tuwan.com/templet/lol/new2015/images/tw-lol-hide.png) 0 0 no-repeat; cursor: pointer; left: 0px; bottom: 0;}
+.tw-lol-live-hide span { display: block; width: 40px; height: 40px; background: url(http://static.tuwan.com/templet/lol/new2015/images/ico-bg.png) -77px -420px no-repeat; position: absolute; left: 63px; top: 85px;}
+.tw-lol-live-hide:hover span { background-position: -120px -420px;}
+.tw-lol-live-show { position: relative; width: 196px; left: -230px;}
+.tw-lol-live-show .close { width: 23px; height: 23px; position: absolute; top: 28px; right: -24px; background: url(http://static.tuwan.com/templet/lol/new2015/images/ico-bg.png) -86px -194px no-repeat; cursor: pointer;}
+.tw-lol-live-show .close:hover { background-position: -110px -194px;}
+.tw-lol-live-show-con { padding: 10px 17px; background: #fcf6e0;}
+.tw-lol-live-show-con ul.text li { font-size: 13px; height: 24px; line-height: 24px;}
+
+.tw-lol-live-show-con ul.img li { position: relative; float: left; margin-top: 15px;}
+.tw-lol-live-show-con ul.img li p { position: absolute; left: 0; bottom: 0; width: 100%; height: 25px; line-height: 25px; text-align: center; background: #000; color: #fff;}
+
+
+.tag_info { padding:15px 20px; border-bottom:1px dashed #ededed;}
+.tag_info_left { width:323px; float:left; position:relative}
+.tag_info_right { width:825px; float:right; font-size:15px; color:#333333;padding-right:10px;}
+.tag_info_right .tag_box { padding-left:30px; }
+.tag_info_right .tag_box h1 { font-size:38px; border-bottom:1px dashed #cccccc;padding-bottom:10px;color:#09c67d;}
+.tag_text_right{padding-top:15px;line-height:26px;color:#666666;font-size:14px;}
+.tag_all_related { background:#ededed; padding:15px 0 15px 40px; font-weight:bold; margin:15px 0 0 0;font-size:14px;border:1px solid #D4D8DE;line-height:32px;}
+.tag_all_related a{padding:0 8px;display:inline-block;color:#333333;}
+.tag_all_related a:hover{text-decoration:underline;color:#f43838;transition: color 0.2s;-webkit-transition: color 0.2s;-moz-transition: color 0.2s;-ms-transition: color 0.2s; -o-transition: color 0.2s;}
+.tag_score { overflow:hidden\9;}
+.tag_score .tag_score_info { float:left; padding:8px 0 0 20px; width:437px;}
+.tag_score .tag_score_info p { font-weight:normal; font-size:12px;}
+
+/* club link */
+.tagclub {border-bottom: 1px dotted #333;cursor: pointer;color: #333;}
+a.tagclub:hover{background:#333;color:#fff;border-bottom:1px dotted #fff;text-decoration:none}
+.my_club{_width:265px;border-radius:5px;box-shadow:0 0 6px rgba(0,0,0,0.2);border:1px solid #332b59;position:absolute;z-index:17;background:rgba(51, 43, 89, 0.95);z-index:17}      
+.em_club{display:inline-block;vertical-align:middle;overflow:hidden;background:url(http://static.tuwan.com/templet/lol/new2015/images/tuwanbar1.png?123) no-repeat}
+.em_club{width:40px;height:21px;position:absolute;background-position:-185px -135px;top:-21px;left:30px}
+.em_up{background-position:-185px -135px;top:-21px;}
+.em_donw{background-position:-185px -158px;top:151px;}
+
+.w340{width:340px}
+.in_club{padding:20px}
+.in_club .slink{padding-left:15px}
+.nei_club .pic,.nei_club .neirong,.nei_club .neirong1{float:left;display:inline}
+.nei_club .pic img{vertical-align:top}  
+.nei_club .neirong{width:184px;padding-left:12px; border-left:1px solid #564C7D;}
+.nei_club .neirong p a{color:#333;}
+.nei_club .neirong1{width:184px;padding-left:12px;}
+.nei_club .neirong1 p a{color:#333;}
+.playername{font-size:16px;line-height:24px;font-weight:bold;}
+.playername a{color: #feb300;}
+.playername a:hover{color:#FF0000;}
+.nei_club .clubname{padding:0;margin-bottom:12px;color:#fefeff;}
+.nei_club .incolor{color:#C2BFD0; font-size:12px; padding-bottom:5px;}
+.nei_club .incolor b{color: #e93310;display:inline-block;font-size:14px;}
+.tuiyi{font-size:12px;line-height:20px;margin-left:10px;background:#679c21;color:#fff;display:inline-block;vertical-align:middle;width:30px;height:20px;text-align:center}
+.weizhi{color:#C2BFD0; font-size:12px; padding-bottom:5px;}
+.weizhi b{display: inline-block;height: 14px; line-height: 14px; padding: 0 15px 0 5px; border-left: 14px solid #0dfbee;}
+
+.login-logo {
+    height: 36px;
+    overflow: hidden;
+}
+
+.tuwanwei {
+    width: 180px;
+    border-radius: 5px;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    background: #fff;
+    border: 1px solid #e2e2e2;
+    text-align: center;
+    padding-bottom: 10px;
+    text-align: center;
+    position: absolute;
+	right: -184px;
+    line-height: 20px;
+    z-index: 9999;
+}
+
+.download-box {
+    width: 107px;
+    position: fixed;
+    padding: 20px 0;
+    left: 0px;
+    top: 185px;
+}
+
+.download-box  .btn-tips {
+    width: 27px;
+    background: rgba(255, 255, 255, 0.9);
+    color: #11B475;
+    font-size: 14px;
+    text-align: center;
+    line-height: 18px;
+    position: absolute;
+    right: -22px;
+    top: 101px;
+    padding-top: 10px;
+    border-radius:4px;
+}
+
+.download-box  .btn-tips  i{
+    background-image: url(http://static.tuwan.com/templet/lol/new2015/images/index_z.png?123);
+    background-position: -730px -160px;
+    display: block;
+    width: 7px;
+    height: 12px;
+    margin: 10px auto;
+    background-repeat: no-repeat;
+}
+.download-box  .btn-tips2  i{
+    background-image: url(http://static.tuwan.com/templet/lol/new2015/images/index_z.png?123);
+    background-position: -712px -178px;
+    display: block;
+    width: 7px;
+    height: 12px;
+    margin: 10px auto;
+    background-repeat: no-repeat;
+}
+
+.adbox {
+    background: #000 none repeat scroll 0 0;
+    height: 498px;
+    left:0px;
+	top:0px;
+    position: absolute;
+    width:760px;
+	display:none;
+}
+
+.adbox .ad_time {
+    background: rgba(0, 0, 0, 0.9) none repeat scroll 0 0;
+    color: #fff;
+    font-size: 14px;
+    height: 40px;
+    line-height: 40px;
+    padding: 0 10px;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.adbox .ad {
+    float: left;
+    height: 400px;
+    margin-left: 100px;
+    margin-top: 40px;
+    width: 600px;
+}
+
+.adbox .ad_time #t {
+    color: red;
+    font-weight: bold;
+    padding: 0 10px;
+}
